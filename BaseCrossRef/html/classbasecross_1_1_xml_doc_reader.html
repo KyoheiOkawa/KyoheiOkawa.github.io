@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::XmlDocReader クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_xml_doc_reader.html">XmlDocReader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="classbasecross_1_1_xml_doc_reader-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::XmlDocReader クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>XML読み込みオンリークラス  
+ <a href="classbasecross_1_1_xml_doc_reader.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_xml_doc_8h_source.html">XmlDoc.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a60a23b255c76754e4ba21e239e44463e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#a60a23b255c76754e4ba21e239e44463e">XmlDocReader</a> (const wstring &amp;StrReadContext, bool IsMemory=false)</td></tr>
+<tr class="memdesc:a60a23b255c76754e4ba21e239e44463e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a60a23b255c76754e4ba21e239e44463e">[詳解]</a><br /></td></tr>
+<tr class="separator:a60a23b255c76754e4ba21e239e44463e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7979c6abeb3ccb93453402065b017d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#acd7979c6abeb3ccb93453402065b017d">~XmlDocReader</a> ()</td></tr>
+<tr class="memdesc:acd7979c6abeb3ccb93453402065b017d"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#acd7979c6abeb3ccb93453402065b017d">[詳解]</a><br /></td></tr>
+<tr class="separator:acd7979c6abeb3ccb93453402065b017d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c4fecf5da6b388ce8b1d565bc7d10c"><td class="memItemLeft" align="right" valign="top">IXMLDOMNodePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#ab1c4fecf5da6b388ce8b1d565bc7d10c">GetSelectSingleNode</a> (const CComBSTR &amp;Query) const</td></tr>
+<tr class="memdesc:ab1c4fecf5da6b388ce8b1d565bc7d10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">XPathによる単体Nodeの取得  <a href="#ab1c4fecf5da6b388ce8b1d565bc7d10c">[詳解]</a><br /></td></tr>
+<tr class="separator:ab1c4fecf5da6b388ce8b1d565bc7d10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22602bb56f2ec94d5391c107115f359c"><td class="memItemLeft" align="right" valign="top">IXMLDOMNodeListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#a22602bb56f2ec94d5391c107115f359c">GetSelectNodes</a> (const CComBSTR &amp;Query) const</td></tr>
+<tr class="memdesc:a22602bb56f2ec94d5391c107115f359c"><td class="mdescLeft">&#160;</td><td class="mdescRight">XPathによる複数Nodeの取得  <a href="#a22602bb56f2ec94d5391c107115f359c">[詳解]</a><br /></td></tr>
+<tr class="separator:a22602bb56f2ec94d5391c107115f359c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac02c97851c935b59ad096a6be0c55bc6"><td class="memItemLeft" align="right" valign="top">static long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#ac02c97851c935b59ad096a6be0c55bc6">GetLength</a> (const IXMLDOMNodeListPtr &amp;NodeList)</td></tr>
+<tr class="memdesc:ac02c97851c935b59ad096a6be0c55bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodeの数取得  <a href="#ac02c97851c935b59ad096a6be0c55bc6">[詳解]</a><br /></td></tr>
+<tr class="separator:ac02c97851c935b59ad096a6be0c55bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee1e76f34206927caabe5cfd371d73c"><td class="memItemLeft" align="right" valign="top">static IXMLDOMNodePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#acee1e76f34206927caabe5cfd371d73c">GetItem</a> (const IXMLDOMNodeListPtr &amp;NodeList, long index)</td></tr>
+<tr class="memdesc:acee1e76f34206927caabe5cfd371d73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">インデックスからNodeの取得  <a href="#acee1e76f34206927caabe5cfd371d73c">[詳解]</a><br /></td></tr>
+<tr class="separator:acee1e76f34206927caabe5cfd371d73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76946a2db1a9c2aba210a986f2fe1da"><td class="memItemLeft" align="right" valign="top">static IXMLDOMNodeListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#af76946a2db1a9c2aba210a986f2fe1da">GetChildNodes</a> (const IXMLDOMNodePtr &amp;Node)</td></tr>
+<tr class="memdesc:af76946a2db1a9c2aba210a986f2fe1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">子供Nodeリストの取得  <a href="#af76946a2db1a9c2aba210a986f2fe1da">[詳解]</a><br /></td></tr>
+<tr class="separator:af76946a2db1a9c2aba210a986f2fe1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02cb8d005748eedd4af4463fc5e58e6"><td class="memItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#ac02cb8d005748eedd4af4463fc5e58e6">GetBaseName</a> (const IXMLDOMNodePtr &amp;Node)</td></tr>
+<tr class="memdesc:ac02cb8d005748eedd4af4463fc5e58e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node名の取得  <a href="#ac02cb8d005748eedd4af4463fc5e58e6">[詳解]</a><br /></td></tr>
+<tr class="separator:ac02cb8d005748eedd4af4463fc5e58e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0260542db07042cc98702622de62163"><td class="memItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#ad0260542db07042cc98702622de62163">GetText</a> (const IXMLDOMNodePtr &amp;Node)</td></tr>
+<tr class="memdesc:ad0260542db07042cc98702622de62163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodeのテキストの取得  <a href="#ad0260542db07042cc98702622de62163">[詳解]</a><br /></td></tr>
+<tr class="separator:ad0260542db07042cc98702622de62163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfaeda490de0c6c1ab8e4856787f4daa"><td class="memItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#acfaeda490de0c6c1ab8e4856787f4daa">GetXML</a> (const IXMLDOMNodePtr &amp;Node)</td></tr>
+<tr class="memdesc:acfaeda490de0c6c1ab8e4856787f4daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">NodeのXMLの取得  <a href="#acfaeda490de0c6c1ab8e4856787f4daa">[詳解]</a><br /></td></tr>
+<tr class="separator:acfaeda490de0c6c1ab8e4856787f4daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b4e79e9e6a69c5a78f1a42bab536ca"><td class="memItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#a37b4e79e9e6a69c5a78f1a42bab536ca">GetAttribute</a> (const IXMLDOMNodePtr &amp;Node, const CComBSTR &amp;AttTag)</td></tr>
+<tr class="memdesc:a37b4e79e9e6a69c5a78f1a42bab536ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodeのアトリビュートの取得  <a href="#a37b4e79e9e6a69c5a78f1a42bab536ca">[詳解]</a><br /></td></tr>
+<tr class="separator:a37b4e79e9e6a69c5a78f1a42bab536ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ecbeedff1841ed6ebe8d0bba7a1eb9"><td class="memItemLeft" align="right" valign="top">static IXMLDOMNodePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#a95ecbeedff1841ed6ebe8d0bba7a1eb9">GetSelectSingleNode</a> (const IXMLDOMNodePtr &amp;Node, const CComBSTR &amp;Query)</td></tr>
+<tr class="memdesc:a95ecbeedff1841ed6ebe8d0bba7a1eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">XPathによる単体Nodeの取得  <a href="#a95ecbeedff1841ed6ebe8d0bba7a1eb9">[詳解]</a><br /></td></tr>
+<tr class="separator:a95ecbeedff1841ed6ebe8d0bba7a1eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b29d9d479a4e74babd2ea38b670afe8"><td class="memItemLeft" align="right" valign="top">static IXMLDOMNodeListPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#a6b29d9d479a4e74babd2ea38b670afe8">GetSelectNodes</a> (const IXMLDOMNodePtr &amp;Node, const CComBSTR &amp;Query)</td></tr>
+<tr class="memdesc:a6b29d9d479a4e74babd2ea38b670afe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">XPathによる複数Nodeの取得  <a href="#a6b29d9d479a4e74babd2ea38b670afe8">[詳解]</a><br /></td></tr>
+<tr class="separator:a6b29d9d479a4e74babd2ea38b670afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:afbc39fac40c42504c18d627fe3978731"><td class="memItemLeft" align="right" valign="top">IXMLDOMDocumentPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_xml_doc_reader.html#afbc39fac40c42504c18d627fe3978731">m_pXMLDOMDocument</a></td></tr>
+<tr class="separator:afbc39fac40c42504c18d627fe3978731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>XML読み込みオンリークラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a60a23b255c76754e4ba21e239e44463e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a23b255c76754e4ba21e239e44463e">&#9670;&nbsp;</a></span>XmlDocReader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::XmlDocReader::XmlDocReader </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>StrReadContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>IsMemory</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">StrReadContext</td><td>XMLコンテクスト </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IsMemory</td><td>XMLコンテクストがメモリ上のテキストかどうか（そうでなければXMLファイル） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd7979c6abeb3ccb93453402065b017d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd7979c6abeb3ccb93453402065b017d">&#9670;&nbsp;</a></span>~XmlDocReader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::XmlDocReader::~XmlDocReader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a37b4e79e9e6a69c5a78f1a42bab536ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b4e79e9e6a69c5a78f1a42bab536ca">&#9670;&nbsp;</a></span>GetAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring basecross::XmlDocReader::GetAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodePtr &amp;&#160;</td>
+          <td class="paramname"><em>Node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CComBSTR &amp;&#160;</td>
+          <td class="paramname"><em>AttTag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nodeのアトリビュートの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Node</td><td>ターゲットNode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">AttTag</td><td>アトリビュート名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Nodeのアトリビュート </dd></dl>
+
+</div>
+</div>
+<a id="ac02cb8d005748eedd4af4463fc5e58e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02cb8d005748eedd4af4463fc5e58e6">&#9670;&nbsp;</a></span>GetBaseName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring basecross::XmlDocReader::GetBaseName </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodePtr &amp;&#160;</td>
+          <td class="paramname"><em>Node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Node名の取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Node</td><td>ターゲットNode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Node名 </dd></dl>
+
+</div>
+</div>
+<a id="af76946a2db1a9c2aba210a986f2fe1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af76946a2db1a9c2aba210a986f2fe1da">&#9670;&nbsp;</a></span>GetChildNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IXMLDOMNodeListPtr basecross::XmlDocReader::GetChildNodes </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodePtr &amp;&#160;</td>
+          <td class="paramname"><em>Node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>子供Nodeリストの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Node</td><td>親Node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>子供Nodeリスト </dd></dl>
+
+</div>
+</div>
+<a id="acee1e76f34206927caabe5cfd371d73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee1e76f34206927caabe5cfd371d73c">&#9670;&nbsp;</a></span>GetItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IXMLDOMNodePtr basecross::XmlDocReader::GetItem </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodeListPtr &amp;&#160;</td>
+          <td class="paramname"><em>NodeList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インデックスからNodeの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">IXMLDOMNodeListPtr</td><td>複数Node </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>インデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>ターゲットのNode </dd></dl>
+
+</div>
+</div>
+<a id="ac02c97851c935b59ad096a6be0c55bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02c97851c935b59ad096a6be0c55bc6">&#9670;&nbsp;</a></span>GetLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long basecross::XmlDocReader::GetLength </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodeListPtr &amp;&#160;</td>
+          <td class="paramname"><em>NodeList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nodeの数取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">NodeList</td><td>複数Node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Nodeの数 </dd></dl>
+
+</div>
+</div>
+<a id="a22602bb56f2ec94d5391c107115f359c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22602bb56f2ec94d5391c107115f359c">&#9670;&nbsp;</a></span>GetSelectNodes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IXMLDOMNodeListPtr basecross::XmlDocReader::GetSelectNodes </td>
+          <td>(</td>
+          <td class="paramtype">const CComBSTR &amp;&#160;</td>
+          <td class="paramname"><em>Query</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XPathによる複数Nodeの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Query</td><td>クエリ文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>複数Nodeインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="a6b29d9d479a4e74babd2ea38b670afe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b29d9d479a4e74babd2ea38b670afe8">&#9670;&nbsp;</a></span>GetSelectNodes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IXMLDOMNodeListPtr basecross::XmlDocReader::GetSelectNodes </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodePtr &amp;&#160;</td>
+          <td class="paramname"><em>Node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CComBSTR &amp;&#160;</td>
+          <td class="paramname"><em>Query</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>XPathによる複数Nodeの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Node</td><td>ターゲットNode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Query</td><td>クエリ文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>複数Node </dd></dl>
+
+</div>
+</div>
+<a id="ab1c4fecf5da6b388ce8b1d565bc7d10c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c4fecf5da6b388ce8b1d565bc7d10c">&#9670;&nbsp;</a></span>GetSelectSingleNode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IXMLDOMNodePtr basecross::XmlDocReader::GetSelectSingleNode </td>
+          <td>(</td>
+          <td class="paramtype">const CComBSTR &amp;&#160;</td>
+          <td class="paramname"><em>Query</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XPathによる単体Nodeの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Query</td><td>クエリ文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Nodeインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="a95ecbeedff1841ed6ebe8d0bba7a1eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ecbeedff1841ed6ebe8d0bba7a1eb9">&#9670;&nbsp;</a></span>GetSelectSingleNode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IXMLDOMNodePtr basecross::XmlDocReader::GetSelectSingleNode </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodePtr &amp;&#160;</td>
+          <td class="paramname"><em>Node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CComBSTR &amp;&#160;</td>
+          <td class="paramname"><em>Query</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>XPathによる単体Nodeの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Node</td><td>ターゲットNode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Query</td><td>クエリ文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Node </dd></dl>
+
+</div>
+</div>
+<a id="ad0260542db07042cc98702622de62163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0260542db07042cc98702622de62163">&#9670;&nbsp;</a></span>GetText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring basecross::XmlDocReader::GetText </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodePtr &amp;&#160;</td>
+          <td class="paramname"><em>Node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nodeのテキストの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Node</td><td>ターゲットNode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Nodeのテキスト </dd></dl>
+
+</div>
+</div>
+<a id="acfaeda490de0c6c1ab8e4856787f4daa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfaeda490de0c6c1ab8e4856787f4daa">&#9670;&nbsp;</a></span>GetXML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring basecross::XmlDocReader::GetXML </td>
+          <td>(</td>
+          <td class="paramtype">const IXMLDOMNodePtr &amp;&#160;</td>
+          <td class="paramname"><em>Node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NodeのXMLの取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Node</td><td>ターゲットNode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>NodeのXML </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="afbc39fac40c42504c18d627fe3978731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc39fac40c42504c18d627fe3978731">&#9670;&nbsp;</a></span>m_pXMLDOMDocument</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IXMLDOMDocumentPtr basecross::XmlDocReader::m_pXMLDOMDocument</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_xml_doc_8h_source.html">XmlDoc.h</a></li>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_xml_doc_8cpp.html">XmlDoc.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

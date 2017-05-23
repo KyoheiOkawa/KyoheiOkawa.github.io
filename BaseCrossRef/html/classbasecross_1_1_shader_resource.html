@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::ShaderResource クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_shader_resource.html">ShaderResource</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="classbasecross_1_1_shader_resource-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::ShaderResource クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>シェーダ関連リソースのインターフェイス  
+ <a href="classbasecross_1_1_shader_resource.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_dx11_lib_2_device_resources_8h_source.html">DeviceResources.h</a>&gt;</code></p>
+<div class="dynheader">
+basecross::ShaderResource の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classbasecross_1_1_shader_resource.png" usemap="#basecross::ShaderResource_map" alt=""/>
+  <map id="basecross::ShaderResource_map" name="basecross::ShaderResource_map">
+<area href="classbasecross_1_1_c_buffer.html" title="コンスタントバッファ " alt="basecross::CBuffer&lt; ConstantType &gt;" shape="rect" coords="349,56,688,80"/>
+<area href="classbasecross_1_1_compute_shader.html" title="コンピュートシェーダ(シングルトン) " alt="basecross::ComputeShader&lt; ShaderType &gt;" shape="rect" coords="349,112,688,136"/>
+<area href="classbasecross_1_1_constant_buffer.html" title="コンスタントバッファ(シングルトン) " alt="basecross::ConstantBuffer&lt; ShaderType, ConstantType &gt;" shape="rect" coords="349,168,688,192"/>
+<area href="classbasecross_1_1_c_shader.html" title="コンピュートシェーダ " alt="basecross::CShader" shape="rect" coords="349,224,688,248"/>
+<area href="classbasecross_1_1_geometry_shader.html" title="ジオメトリシェーダ(シングルトン) " alt="basecross::GeometryShader&lt; ShaderType &gt;" shape="rect" coords="349,280,688,304"/>
+<area href="classbasecross_1_1_g_shader.html" title="ジオメトリシェーダ " alt="basecross::GShader" shape="rect" coords="349,336,688,360"/>
+<area href="classbasecross_1_1_pixel_shader.html" title="ピクセルシェーダ(シングルトン) " alt="basecross::PixelShader&lt; ShaderType &gt;" shape="rect" coords="349,392,688,416"/>
+<area href="classbasecross_1_1_p_shader.html" title="ピクセルシェーダ " alt="basecross::PShader" shape="rect" coords="349,448,688,472"/>
+<area href="classbasecross_1_1_vertex_shader.html" title="頂点シェーダ(シングルトン) " alt="basecross::VertexShader&lt; ShaderType, VirtexType &gt;" shape="rect" coords="349,504,688,528"/>
+<area href="classbasecross_1_1_v_shader.html" title="頂点シェーダ " alt="basecross::VShader&lt; VirtexType &gt;" shape="rect" coords="349,560,688,584"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_shader_resource_1_1_impl.html">Impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2985060ca8d1b80051a9e4cef80ec4f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a2985060ca8d1b80051a9e4cef80ec4f4">ReadBinaryFile</a> (const wstring &amp;fileName, unique_ptr&lt; uint8_t[]&gt; &amp;Data, size_t &amp;CsoSz)</td></tr>
+<tr class="memdesc:a2985060ca8d1b80051a9e4cef80ec4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリファイルを読み込む  <a href="#a2985060ca8d1b80051a9e4cef80ec4f4">[詳解]</a><br /></td></tr>
+<tr class="separator:a2985060ca8d1b80051a9e4cef80ec4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307be2c7e0954dc810eb0ff72ddcf758"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a307be2c7e0954dc810eb0ff72ddcf758">CreateVertexShader</a> (unique_ptr&lt; uint8_t[]&gt; &amp;Data, size_t CsoSz, ID3D11VertexShader **pResult)</td></tr>
+<tr class="memdesc:a307be2c7e0954dc810eb0ff72ddcf758"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータから頂点シェーダを作成する  <a href="#a307be2c7e0954dc810eb0ff72ddcf758">[詳解]</a><br /></td></tr>
+<tr class="separator:a307be2c7e0954dc810eb0ff72ddcf758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e1f6115428a3590f06c117c31b793b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#ac5e1f6115428a3590f06c117c31b793b">CreateInputLayout</a> (unique_ptr&lt; uint8_t[]&gt; &amp;Data, size_t CsoSz, const D3D11_INPUT_ELEMENT_DESC *pElement, UINT NumElement, ID3D11InputLayout **pResult)</td></tr>
+<tr class="memdesc:ac5e1f6115428a3590f06c117c31b793b"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータからインプットレイアウトを作成する  <a href="#ac5e1f6115428a3590f06c117c31b793b">[詳解]</a><br /></td></tr>
+<tr class="separator:ac5e1f6115428a3590f06c117c31b793b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa542aee3cbc45b2d39a033cbb890a13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#aaa542aee3cbc45b2d39a033cbb890a13">CreatePixelShader</a> (unique_ptr&lt; uint8_t[]&gt; &amp;Data, size_t CsoSz, ID3D11PixelShader **pResult)</td></tr>
+<tr class="memdesc:aaa542aee3cbc45b2d39a033cbb890a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータからピクセルシェーダを作成する  <a href="#aaa542aee3cbc45b2d39a033cbb890a13">[詳解]</a><br /></td></tr>
+<tr class="separator:aaa542aee3cbc45b2d39a033cbb890a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad172b22acbf9aef42a8d36b845f9682a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#ad172b22acbf9aef42a8d36b845f9682a">CreateGeometryShader</a> (unique_ptr&lt; uint8_t[]&gt; &amp;Data, size_t CsoSz, ID3D11GeometryShader **pResult)</td></tr>
+<tr class="memdesc:ad172b22acbf9aef42a8d36b845f9682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータからジオメトリシェーダを作成する  <a href="#ad172b22acbf9aef42a8d36b845f9682a">[詳解]</a><br /></td></tr>
+<tr class="separator:ad172b22acbf9aef42a8d36b845f9682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74e3a74deace83af2978add72d13ea8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#aa74e3a74deace83af2978add72d13ea8">CreateGeometryShader</a> (unique_ptr&lt; uint8_t[]&gt; &amp;Data, size_t CsoSz, const vector&lt; D3D11_SO_DECLARATION_ENTRY &gt; &amp;SOEntries, UINT Stride, UINT NumStride, ID3D11GeometryShader **pResult)</td></tr>
+<tr class="memdesc:aa74e3a74deace83af2978add72d13ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータからジオメトリシェーダを作成する  <a href="#aa74e3a74deace83af2978add72d13ea8">[詳解]</a><br /></td></tr>
+<tr class="separator:aa74e3a74deace83af2978add72d13ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc14e41ed4852f020ae3f381f1a7fdfb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#afc14e41ed4852f020ae3f381f1a7fdfb">CreateComputeShader</a> (unique_ptr&lt; uint8_t[]&gt; &amp;Data, size_t CsoSz, ID3D11ComputeShader **pResult)</td></tr>
+<tr class="memdesc:afc14e41ed4852f020ae3f381f1a7fdfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリデータからコンピュートシェーダを作成する  <a href="#afc14e41ed4852f020ae3f381f1a7fdfb">[詳解]</a><br /></td></tr>
+<tr class="separator:afc14e41ed4852f020ae3f381f1a7fdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af574e1a0e9d39f3863db295587511db2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#af574e1a0e9d39f3863db295587511db2">CreateConstantBuffer</a> (UINT BuffSize, ID3D11Buffer **pResult)</td></tr>
+<tr class="memdesc:af574e1a0e9d39f3863db295587511db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンスタントバッファを作成する  <a href="#af574e1a0e9d39f3863db295587511db2">[詳解]</a><br /></td></tr>
+<tr class="separator:af574e1a0e9d39f3863db295587511db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a44edc1defcf654512067ac57711bf280"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a44edc1defcf654512067ac57711bf280">m_LightMax</a> { 3 }</td></tr>
+<tr class="separator:a44edc1defcf654512067ac57711bf280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a44581fa659e00c75b0ea21129e9fe0f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a44581fa659e00c75b0ea21129e9fe0f2">ShaderResource</a> ()</td></tr>
+<tr class="memdesc:a44581fa659e00c75b0ea21129e9fe0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロテクトコンストラクタ  <a href="#a44581fa659e00c75b0ea21129e9fe0f2">[詳解]</a><br /></td></tr>
+<tr class="separator:a44581fa659e00c75b0ea21129e9fe0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bec059de4c47b5d5661edcc1d3d20b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a34bec059de4c47b5d5661edcc1d3d20b">~ShaderResource</a> ()</td></tr>
+<tr class="memdesc:a34bec059de4c47b5d5661edcc1d3d20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロテクトデストラクタ  <a href="#a34bec059de4c47b5d5661edcc1d3d20b">[詳解]</a><br /></td></tr>
+<tr class="separator:a34bec059de4c47b5d5661edcc1d3d20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5208d871c3e2b16373dc1462a1899bf"><td class="memItemLeft" align="right" valign="top">ID3D11VertexShader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#ab5208d871c3e2b16373dc1462a1899bf">GetVertexShaderBase</a> (const wstring &amp;Filename, ComPtr&lt; ID3D11VertexShader &gt; &amp;VSPtr)</td></tr>
+<tr class="memdesc:ab5208d871c3e2b16373dc1462a1899bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点シェーダアクセッサ  <a href="#ab5208d871c3e2b16373dc1462a1899bf">[詳解]</a><br /></td></tr>
+<tr class="separator:ab5208d871c3e2b16373dc1462a1899bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7023417c88cf1268b796d0cb46cdf0c"><td class="memItemLeft" align="right" valign="top">ID3D11InputLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#ab7023417c88cf1268b796d0cb46cdf0c">GetInputLayoutBase</a> (const wstring &amp;Filename, ComPtr&lt; ID3D11InputLayout &gt; &amp;ILPtr, const D3D11_INPUT_ELEMENT_DESC *pElem, UINT NumElements)</td></tr>
+<tr class="memdesc:ab7023417c88cf1268b796d0cb46cdf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">インプットレイアウトアクセッサ  <a href="#ab7023417c88cf1268b796d0cb46cdf0c">[詳解]</a><br /></td></tr>
+<tr class="separator:ab7023417c88cf1268b796d0cb46cdf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c332795aca5d075a2d35a79b9c9074"><td class="memItemLeft" align="right" valign="top">ID3D11Buffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#ad3c332795aca5d075a2d35a79b9c9074">GetConstantBufferBase</a> (UINT BuffSize, ComPtr&lt; ID3D11Buffer &gt; &amp;Buffer)</td></tr>
+<tr class="memdesc:ad3c332795aca5d075a2d35a79b9c9074"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンスタントバッファアクセッサ  <a href="#ad3c332795aca5d075a2d35a79b9c9074">[詳解]</a><br /></td></tr>
+<tr class="separator:ad3c332795aca5d075a2d35a79b9c9074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c79257f7c1212ec2edb36c75f8f9493"><td class="memItemLeft" align="right" valign="top">ID3D11PixelShader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a6c79257f7c1212ec2edb36c75f8f9493">GetPixelShaderBase</a> (const wstring &amp;Filename, ComPtr&lt; ID3D11PixelShader &gt; &amp;PSPtr)</td></tr>
+<tr class="memdesc:a6c79257f7c1212ec2edb36c75f8f9493"><td class="mdescLeft">&#160;</td><td class="mdescRight">ピクセルシェーダアクセッサ  <a href="#a6c79257f7c1212ec2edb36c75f8f9493">[詳解]</a><br /></td></tr>
+<tr class="separator:a6c79257f7c1212ec2edb36c75f8f9493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8493e234c876db46b00aec1175f9e0f9"><td class="memItemLeft" align="right" valign="top">ID3D11GeometryShader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a8493e234c876db46b00aec1175f9e0f9">GetGeometryShaderBase</a> (const wstring &amp;Filename, ComPtr&lt; ID3D11GeometryShader &gt; &amp;GSPtr)</td></tr>
+<tr class="memdesc:a8493e234c876db46b00aec1175f9e0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジオメトリシェーダアクセッサ  <a href="#a8493e234c876db46b00aec1175f9e0f9">[詳解]</a><br /></td></tr>
+<tr class="separator:a8493e234c876db46b00aec1175f9e0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1faa5e8991f3fcac3178d60b30d3cae0"><td class="memItemLeft" align="right" valign="top">ID3D11GeometryShader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a1faa5e8991f3fcac3178d60b30d3cae0">GetGeometryShaderBase</a> (const wstring &amp;Filename, const vector&lt; D3D11_SO_DECLARATION_ENTRY &gt; &amp;SOEntries, UINT Stride, UINT NumStride, ComPtr&lt; ID3D11GeometryShader &gt; &amp;GSPtr)</td></tr>
+<tr class="memdesc:a1faa5e8991f3fcac3178d60b30d3cae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジオメトリシェーダアクセッサ  <a href="#a1faa5e8991f3fcac3178d60b30d3cae0">[詳解]</a><br /></td></tr>
+<tr class="separator:a1faa5e8991f3fcac3178d60b30d3cae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70da29c25e533d6db0ae8e2f8b4f074"><td class="memItemLeft" align="right" valign="top">ID3D11ComputeShader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#af70da29c25e533d6db0ae8e2f8b4f074">GetComputeShaderBase</a> (const wstring &amp;Filename, ComPtr&lt; ID3D11ComputeShader &gt; &amp;CSPtr)</td></tr>
+<tr class="memdesc:af70da29c25e533d6db0ae8e2f8b4f074"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンピュートシェーダアクセッサ  <a href="#af70da29c25e533d6db0ae8e2f8b4f074">[詳解]</a><br /></td></tr>
+<tr class="separator:af70da29c25e533d6db0ae8e2f8b4f074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a2a73936014043525671b68dce32a24b9"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shader_resource.html#a2a73936014043525671b68dce32a24b9">MutexBase</a></td></tr>
+<tr class="separator:a2a73936014043525671b68dce32a24b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>シェーダ関連リソースのインターフェイス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a44581fa659e00c75b0ea21129e9fe0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44581fa659e00c75b0ea21129e9fe0f2">&#9670;&nbsp;</a></span>ShaderResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::ShaderResource::ShaderResource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プロテクトコンストラクタ </p>
+
+</div>
+</div>
+<a id="a34bec059de4c47b5d5661edcc1d3d20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bec059de4c47b5d5661edcc1d3d20b">&#9670;&nbsp;</a></span>~ShaderResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::ShaderResource::~ShaderResource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プロテクトデストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="afc14e41ed4852f020ae3f381f1a7fdfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc14e41ed4852f020ae3f381f1a7fdfb">&#9670;&nbsp;</a></span>CreateComputeShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::CreateComputeShader </td>
+          <td>(</td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>CsoSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11ComputeShader **&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイナリデータからコンピュートシェーダを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Data</td><td>バイナリデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CsoSz</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pResult</td><td>受け取るシェーダ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="af574e1a0e9d39f3863db295587511db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af574e1a0e9d39f3863db295587511db2">&#9670;&nbsp;</a></span>CreateConstantBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::CreateConstantBuffer </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>BuffSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11Buffer **&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンスタントバッファを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">BuffSize</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pResult</td><td>受け取るコンスタントバッファ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ad172b22acbf9aef42a8d36b845f9682a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad172b22acbf9aef42a8d36b845f9682a">&#9670;&nbsp;</a></span>CreateGeometryShader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::CreateGeometryShader </td>
+          <td>(</td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>CsoSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11GeometryShader **&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイナリデータからジオメトリシェーダを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Data</td><td>バイナリデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CsoSz</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pResult</td><td>受け取るシェーダ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="aa74e3a74deace83af2978add72d13ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74e3a74deace83af2978add72d13ea8">&#9670;&nbsp;</a></span>CreateGeometryShader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::CreateGeometryShader </td>
+          <td>(</td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>CsoSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; D3D11_SO_DECLARATION_ENTRY &gt; &amp;&#160;</td>
+          <td class="paramname"><em>SOEntries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>Stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>NumStride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11GeometryShader **&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイナリデータからジオメトリシェーダを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Data</td><td>バイナリデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CsoSz</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">SOEntries</td><td>定義されたエントリの配列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Stride</td><td>1個のストライドサイズ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">NumStride</td><td>ストライド数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pResult</td><td>受け取るシェーダ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ac5e1f6115428a3590f06c117c31b793b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e1f6115428a3590f06c117c31b793b">&#9670;&nbsp;</a></span>CreateInputLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::CreateInputLayout </td>
+          <td>(</td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>CsoSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const D3D11_INPUT_ELEMENT_DESC *&#160;</td>
+          <td class="paramname"><em>pElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>NumElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11InputLayout **&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイナリデータからインプットレイアウトを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Data</td><td>バイナリデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CsoSz</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pElement</td><td>頂点定義 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">NumElement</td><td>頂点定義の数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pResult</td><td>受け取るレイアウト </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="aaa542aee3cbc45b2d39a033cbb890a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa542aee3cbc45b2d39a033cbb890a13">&#9670;&nbsp;</a></span>CreatePixelShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::CreatePixelShader </td>
+          <td>(</td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>CsoSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11PixelShader **&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイナリデータからピクセルシェーダを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Data</td><td>バイナリデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CsoSz</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pResult</td><td>受け取るシェーダ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a307be2c7e0954dc810eb0ff72ddcf758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307be2c7e0954dc810eb0ff72ddcf758">&#9670;&nbsp;</a></span>CreateVertexShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::CreateVertexShader </td>
+          <td>(</td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>CsoSz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11VertexShader **&#160;</td>
+          <td class="paramname"><em>pResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイナリデータから頂点シェーダを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Data</td><td>バイナリデータ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">CsoSz</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pResult</td><td>受け取るシェーダ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="af70da29c25e533d6db0ae8e2f8b4f074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70da29c25e533d6db0ae8e2f8b4f074">&#9670;&nbsp;</a></span>GetComputeShaderBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11ComputeShader* basecross::ShaderResource::GetComputeShaderBase </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>Filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComPtr&lt; ID3D11ComputeShader &gt; &amp;&#160;</td>
+          <td class="paramname"><em>CSPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンピュートシェーダアクセッサ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Filename</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">CSPtr</td><td>検証するシェーダ（COM） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>シェーダインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="ad3c332795aca5d075a2d35a79b9c9074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c332795aca5d075a2d35a79b9c9074">&#9670;&nbsp;</a></span>GetConstantBufferBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11Buffer* basecross::ShaderResource::GetConstantBufferBase </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>BuffSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComPtr&lt; ID3D11Buffer &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンスタントバッファアクセッサ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">BuffSize</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">Buffer</td><td>検証するバッファ（COM） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>シェーダインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="a8493e234c876db46b00aec1175f9e0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8493e234c876db46b00aec1175f9e0f9">&#9670;&nbsp;</a></span>GetGeometryShaderBase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11GeometryShader* basecross::ShaderResource::GetGeometryShaderBase </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>Filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComPtr&lt; ID3D11GeometryShader &gt; &amp;&#160;</td>
+          <td class="paramname"><em>GSPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ジオメトリシェーダアクセッサ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Filename</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">GSPtr</td><td>検証するシェーダ（COM） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>シェーダインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="a1faa5e8991f3fcac3178d60b30d3cae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1faa5e8991f3fcac3178d60b30d3cae0">&#9670;&nbsp;</a></span>GetGeometryShaderBase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11GeometryShader* basecross::ShaderResource::GetGeometryShaderBase </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>Filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; D3D11_SO_DECLARATION_ENTRY &gt; &amp;&#160;</td>
+          <td class="paramname"><em>SOEntries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>Stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>NumStride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComPtr&lt; ID3D11GeometryShader &gt; &amp;&#160;</td>
+          <td class="paramname"><em>GSPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ジオメトリシェーダアクセッサ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Filename</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">SOEntries</td><td>エントリの配列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Stride</td><td>ストライド </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">NumStride</td><td>ストライド数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">GSPtr</td><td>検証するシェーダ（COM） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>シェーダインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="ab7023417c88cf1268b796d0cb46cdf0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7023417c88cf1268b796d0cb46cdf0c">&#9670;&nbsp;</a></span>GetInputLayoutBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11InputLayout* basecross::ShaderResource::GetInputLayoutBase </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>Filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComPtr&lt; ID3D11InputLayout &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ILPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const D3D11_INPUT_ELEMENT_DESC *&#160;</td>
+          <td class="paramname"><em>pElem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>NumElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インプットレイアウトアクセッサ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Filename</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ILPtr</td><td>検証するシェーダ（COM） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>シェーダインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="a6c79257f7c1212ec2edb36c75f8f9493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c79257f7c1212ec2edb36c75f8f9493">&#9670;&nbsp;</a></span>GetPixelShaderBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11PixelShader* basecross::ShaderResource::GetPixelShaderBase </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>Filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComPtr&lt; ID3D11PixelShader &gt; &amp;&#160;</td>
+          <td class="paramname"><em>PSPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ピクセルシェーダアクセッサ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Filename</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">PSPtr</td><td>検証するシェーダ（COM） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>シェーダインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="ab5208d871c3e2b16373dc1462a1899bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5208d871c3e2b16373dc1462a1899bf">&#9670;&nbsp;</a></span>GetVertexShaderBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11VertexShader* basecross::ShaderResource::GetVertexShaderBase </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>Filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ComPtr&lt; ID3D11VertexShader &gt; &amp;&#160;</td>
+          <td class="paramname"><em>VSPtr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>頂点シェーダアクセッサ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Filename</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">VSPtr</td><td>検証するシェーダ（COM） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>シェーダインターフェイス </dd></dl>
+
+</div>
+</div>
+<a id="a2985060ca8d1b80051a9e4cef80ec4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2985060ca8d1b80051a9e4cef80ec4f4">&#9670;&nbsp;</a></span>ReadBinaryFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::ShaderResource::ReadBinaryFile </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>CsoSz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイナリファイルを読み込む </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">Data</td><td>バイナリデータの戻り </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">CsoSz</td><td>サイズの戻り </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a44edc1defcf654512067ac57711bf280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44edc1defcf654512067ac57711bf280">&#9670;&nbsp;</a></span>m_LightMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int basecross::ShaderResource::m_LightMax { 3 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a73936014043525671b68dce32a24b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a73936014043525671b68dce32a24b9">&#9670;&nbsp;</a></span>MutexBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex basecross::ShaderResource::MutexBase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/Dx11Lib/<a class="el" href="_dx11_lib_2_device_resources_8h_source.html">DeviceResources.h</a></li>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/Dx11Lib/<a class="el" href="_dx11_lib_2_device_resources_8cpp.html">DeviceResources.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

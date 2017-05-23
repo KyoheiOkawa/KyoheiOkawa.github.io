@@ -1,0 +1,907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::MeshUtill クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_mesh_utill.html">MeshUtill</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="classbasecross_1_1_mesh_utill-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::MeshUtill クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>頂点関連のユーティリティ関数群(static呼び出しをす)  
+ <a href="classbasecross_1_1_mesh_utill.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_mesh_helper_8h_source.html">MeshHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab8ac6366414de521ed262ad3e2580aed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#ab8ac6366414de521ed262ad3e2580aed">ReverseWinding</a> (vector&lt; uint16_t &gt; &amp;indices, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices)</td></tr>
+<tr class="memdesc:ab8ac6366414de521ed262ad3e2580aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点とインデックスの向きを反転させる（LHとRH変換）  <a href="#ab8ac6366414de521ed262ad3e2580aed">[詳解]</a><br /></td></tr>
+<tr class="separator:ab8ac6366414de521ed262ad3e2580aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100c56ac7489a1daafdf97c570815323"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a100c56ac7489a1daafdf97c570815323">CreateSquare</a> (float size, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a100c56ac7489a1daafdf97c570815323"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットの平面を作成する(static関数)  <a href="#a100c56ac7489a1daafdf97c570815323">[詳解]</a><br /></td></tr>
+<tr class="separator:a100c56ac7489a1daafdf97c570815323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4663a95d3b479efe5a196b1bd2c9d8b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a4663a95d3b479efe5a196b1bd2c9d8b6">CreateCube</a> (float size, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a4663a95d3b479efe5a196b1bd2c9d8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットの立方体を作成する(static関数)  <a href="#a4663a95d3b479efe5a196b1bd2c9d8b6">[詳解]</a><br /></td></tr>
+<tr class="separator:a4663a95d3b479efe5a196b1bd2c9d8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f78b18e580a791513c688a88cc9c36"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a70f78b18e580a791513c688a88cc9c36">CreateSphere</a> (float diameter, size_t tessellation, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a70f78b18e580a791513c688a88cc9c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットの球体を作成する(static関数)  <a href="#a70f78b18e580a791513c688a88cc9c36">[詳解]</a><br /></td></tr>
+<tr class="separator:a70f78b18e580a791513c688a88cc9c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b50b3f781e88302edaa46d59aa7626"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a63b50b3f781e88302edaa46d59aa7626">CreateCapsule</a> (float diameter, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;PointA, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;PointB, size_t tessellation, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a63b50b3f781e88302edaa46d59aa7626"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットのカプセルを作成する(static関数)  <a href="#a63b50b3f781e88302edaa46d59aa7626">[詳解]</a><br /></td></tr>
+<tr class="separator:a63b50b3f781e88302edaa46d59aa7626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e34423b256e29c6b4ac45126c8e28de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a1e34423b256e29c6b4ac45126c8e28de">CreateCylinder</a> (float height, float diameter, size_t tessellation, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a1e34423b256e29c6b4ac45126c8e28de"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットのシリンダーを作成する(static関数)  <a href="#a1e34423b256e29c6b4ac45126c8e28de">[詳解]</a><br /></td></tr>
+<tr class="separator:a1e34423b256e29c6b4ac45126c8e28de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae563276898f44de8576d2150d8cd1e03"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#ae563276898f44de8576d2150d8cd1e03">CreateCone</a> (float diameter, float height, size_t tessellation, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:ae563276898f44de8576d2150d8cd1e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットのコーンを作成する(static関数)  <a href="#ae563276898f44de8576d2150d8cd1e03">[詳解]</a><br /></td></tr>
+<tr class="separator:ae563276898f44de8576d2150d8cd1e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17921a2f9eea9734b62b1868eebd20a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a17921a2f9eea9734b62b1868eebd20a2">CreateTorus</a> (float diameter, float thickness, size_t tessellation, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a17921a2f9eea9734b62b1868eebd20a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットのトーラスを作成する(static関数)  <a href="#a17921a2f9eea9734b62b1868eebd20a2">[詳解]</a><br /></td></tr>
+<tr class="separator:a17921a2f9eea9734b62b1868eebd20a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3346fd99d9df57f49bbc0e6adee0eec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#aa3346fd99d9df57f49bbc0e6adee0eec">CreateTetrahedron</a> (float size, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:aa3346fd99d9df57f49bbc0e6adee0eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットの正4面体を作成する(static関数)  <a href="#aa3346fd99d9df57f49bbc0e6adee0eec">[詳解]</a><br /></td></tr>
+<tr class="separator:aa3346fd99d9df57f49bbc0e6adee0eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bd3d035d4c3cd3e3407e20613fa0b78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a7bd3d035d4c3cd3e3407e20613fa0b78">CreateOctahedron</a> (float size, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a7bd3d035d4c3cd3e3407e20613fa0b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットの正8面体を作成する(static関数)  <a href="#a7bd3d035d4c3cd3e3407e20613fa0b78">[詳解]</a><br /></td></tr>
+<tr class="separator:a7bd3d035d4c3cd3e3407e20613fa0b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794022bbee552e0aeea0a715e78ef552"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a794022bbee552e0aeea0a715e78ef552">CreateDodecahedron</a> (float size, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a794022bbee552e0aeea0a715e78ef552"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットの正12面体を作成する(static関数)  <a href="#a794022bbee552e0aeea0a715e78ef552">[詳解]</a><br /></td></tr>
+<tr class="separator:a794022bbee552e0aeea0a715e78ef552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29797b11c5255ec4c82b353a1b0cac7d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a29797b11c5255ec4c82b353a1b0cac7d">CreateIcosahedron</a> (float size, vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;vertices, vector&lt; uint16_t &gt; &amp;indices)</td></tr>
+<tr class="memdesc:a29797b11c5255ec4c82b353a1b0cac7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPosNormalTexフォーマットの正20面体を作成する(static関数)  <a href="#a29797b11c5255ec4c82b353a1b0cac7d">[詳解]</a><br /></td></tr>
+<tr class="separator:a29797b11c5255ec4c82b353a1b0cac7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8a5dbbca5db7901b0d101799071f4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#a6a8a5dbbca5db7901b0d101799071f4e">SetNormalTangent</a> (vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_tangent_texture.html">VertexPositionNormalTangentTexture</a> &gt; &amp;vertices)</td></tr>
+<tr class="memdesc:a6a8a5dbbca5db7901b0d101799071f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPositionNormalTangentTextureフォーマットのメッシュのタンジェントを追加する  <a href="#a6a8a5dbbca5db7901b0d101799071f4e">[詳解]</a><br /></td></tr>
+<tr class="separator:a6a8a5dbbca5db7901b0d101799071f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa520c7b466a3a23c33c1a726aac3ac2d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_mesh_utill.html#aa520c7b466a3a23c33c1a726aac3ac2d">SetNormalTangent</a> (vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_tangent_texture_skinning.html">VertexPositionNormalTangentTextureSkinning</a> &gt; &amp;vertices)</td></tr>
+<tr class="memdesc:aa520c7b466a3a23c33c1a726aac3ac2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">VertexPositionNormalTangentTextureSkinningフォーマットのメッシュのタンジェントを追加する  <a href="#aa520c7b466a3a23c33c1a726aac3ac2d">[詳解]</a><br /></td></tr>
+<tr class="separator:aa520c7b466a3a23c33c1a726aac3ac2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>頂点関連のユーティリティ関数群(static呼び出しをす) </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a63b50b3f781e88302edaa46d59aa7626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b50b3f781e88302edaa46d59aa7626">&#9670;&nbsp;</a></span>CreateCapsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateCapsule </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>diameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>PointA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>PointB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tessellation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットのカプセルを作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">diameter</td><td>直径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">PointA</td><td>中間部線分の開始点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">PointB</td><td>中間部線分の終了点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tessellation</td><td>分割数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ae563276898f44de8576d2150d8cd1e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae563276898f44de8576d2150d8cd1e03">&#9670;&nbsp;</a></span>CreateCone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateCone </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>diameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tessellation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットのコーンを作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">diameter</td><td>直径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>高さ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tessellation</td><td>分割数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a4663a95d3b479efe5a196b1bd2c9d8b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4663a95d3b479efe5a196b1bd2c9d8b6">&#9670;&nbsp;</a></span>CreateCube()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateCube </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットの立方体を作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>1つの辺のサイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a1e34423b256e29c6b4ac45126c8e28de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e34423b256e29c6b4ac45126c8e28de">&#9670;&nbsp;</a></span>CreateCylinder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateCylinder </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>diameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tessellation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットのシリンダーを作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>高さ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">diameter</td><td>直径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tessellation</td><td>分割数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a794022bbee552e0aeea0a715e78ef552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794022bbee552e0aeea0a715e78ef552">&#9670;&nbsp;</a></span>CreateDodecahedron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateDodecahedron </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットの正12面体を作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a29797b11c5255ec4c82b353a1b0cac7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29797b11c5255ec4c82b353a1b0cac7d">&#9670;&nbsp;</a></span>CreateIcosahedron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateIcosahedron </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットの正20面体を作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a7bd3d035d4c3cd3e3407e20613fa0b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd3d035d4c3cd3e3407e20613fa0b78">&#9670;&nbsp;</a></span>CreateOctahedron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateOctahedron </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットの正8面体を作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a70f78b18e580a791513c688a88cc9c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f78b18e580a791513c688a88cc9c36">&#9670;&nbsp;</a></span>CreateSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateSphere </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>diameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tessellation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットの球体を作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">diameter</td><td>直径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tessellation</td><td>分割数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a100c56ac7489a1daafdf97c570815323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100c56ac7489a1daafdf97c570815323">&#9670;&nbsp;</a></span>CreateSquare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateSquare </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットの平面を作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>1つの辺のサイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="aa3346fd99d9df57f49bbc0e6adee0eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3346fd99d9df57f49bbc0e6adee0eec">&#9670;&nbsp;</a></span>CreateTetrahedron()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateTetrahedron </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットの正4面体を作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>サイズ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a17921a2f9eea9734b62b1868eebd20a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17921a2f9eea9734b62b1868eebd20a2">&#9670;&nbsp;</a></span>CreateTorus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::CreateTorus </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>diameter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>thickness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tessellation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPosNormalTexフォーマットのトーラスを作成する(static関数) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">diameter</td><td>ドーナッツ中心までの直径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thickness</td><td>ドーナッツ太さ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tessellation</td><td>分割数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点を作成するための配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスを作成するための配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ab8ac6366414de521ed262ad3e2580aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ac6366414de521ed262ad3e2580aed">&#9670;&nbsp;</a></span>ReverseWinding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void basecross::MeshUtill::ReverseWinding </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; uint16_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_texture.html">VertexPositionNormalTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>頂点とインデックスの向きを反転させる（LHとRH変換） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>インデックスの配列 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>頂点の配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a6a8a5dbbca5db7901b0d101799071f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8a5dbbca5db7901b0d101799071f4e">&#9670;&nbsp;</a></span>SetNormalTangent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::SetNormalTangent </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_tangent_texture.html">VertexPositionNormalTangentTexture</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPositionNormalTangentTextureフォーマットのメッシュのタンジェントを追加する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">vertices</td><td>頂点の配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="aa520c7b466a3a23c33c1a726aac3ac2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa520c7b466a3a23c33c1a726aac3ac2d">&#9670;&nbsp;</a></span>SetNormalTangent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::MeshUtill::SetNormalTangent </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="structbasecross_1_1_vertex_position_normal_tangent_texture_skinning.html">VertexPositionNormalTangentTextureSkinning</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>VertexPositionNormalTangentTextureSkinningフォーマットのメッシュのタンジェントを追加する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">vertices</td><td>頂点の配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_mesh_helper_8h_source.html">MeshHelper.h</a></li>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_mesh_helper_8cpp.html">MeshHelper.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

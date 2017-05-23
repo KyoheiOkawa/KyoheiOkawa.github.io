@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::ShapeInterface クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_shape_interface.html">ShapeInterface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classbasecross_1_1_shape_interface-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::ShapeInterface クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>UpdateとDrawのインターフェイス  
+ <a href="classbasecross_1_1_shape_interface.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a>&gt;</code></p>
+<div class="dynheader">
+basecross::ShapeInterface の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classbasecross_1_1_shape_interface.png" usemap="#basecross::ShapeInterface_map" alt=""/>
+  <map id="basecross::ShapeInterface_map" name="basecross::ShapeInterface_map">
+<area href="classbasecross_1_1_camera.html" title="カメラ " alt="basecross::Camera" shape="rect" coords="0,56,175,80"/>
+<area href="classbasecross_1_1_component.html" title="コンポーネント親クラス " alt="basecross::Component" shape="rect" coords="185,56,360,80"/>
+<area href="classbasecross_1_1_game_object.html" title="ゲーム配置オブジェクト親クラス " alt="basecross::GameObject" shape="rect" coords="555,56,730,80"/>
+<area href="classbasecross_1_1_scene_interface.html" title="シーンインターフェイス " alt="basecross::SceneInterface" shape="rect" coords="925,56,1100,80"/>
+<area href="classbasecross_1_1_stage.html" alt="basecross::Stage" shape="rect" coords="1110,56,1285,80"/>
+<area href="classbasecross_1_1_view_base.html" title="ビュー（親） " alt="basecross::ViewBase" shape="rect" coords="1295,56,1470,80"/>
+<area href="classbasecross_1_1_look_at_camera.html" title="LookAtカメラ（デバッグやサンプル用カメラ。コントローラによって、カメラの向いている方向に目標を移動さ�..." alt="basecross::LookAtCamera" shape="rect" coords="0,112,175,136"/>
+<area href="classbasecross_1_1_action.html" title="自動状態変更コンポーネント " alt="basecross::Action" shape="rect" coords="370,112,545,136"/>
+<area href="classbasecross_1_1_action_component.html" title="アクション系コンポーネントの親クラス " alt="basecross::ActionComponent" shape="rect" coords="370,168,545,192"/>
+<area href="classbasecross_1_1_collision.html" title="衝突判定コンポーネントの親クラス " alt="basecross::Collision" shape="rect" coords="370,224,545,248"/>
+<area href="classbasecross_1_1_draw_component.html" title="描画コンポーネントの親クラス " alt="basecross::DrawComponent" shape="rect" coords="370,280,545,304"/>
+<area href="classbasecross_1_1_draw_component.html" title="描画コンポーネントの親クラス " alt="basecross::DrawComponent" shape="rect" coords="370,336,545,360"/>
+<area href="classbasecross_1_1_multi_sound_effect.html" title="マルチサウンドエフェクトコンポーネント " alt="basecross::MultiSoundEffect" shape="rect" coords="370,392,545,416"/>
+<area href="classbasecross_1_1_multi_string_sprite.html" title="複数ブロックの文字列表示コンポーネント " alt="basecross::MultiStringSprite" shape="rect" coords="370,448,545,472"/>
+<area href="classbasecross_1_1_path_search.html" title="経路検索コンポーネント " alt="basecross::PathSearch" shape="rect" coords="370,504,545,528"/>
+<area href="classbasecross_1_1_play_music.html" title="ミュージックコンポーネント " alt="basecross::PlayMusic" shape="rect" coords="370,560,545,584"/>
+<area href="classbasecross_1_1_rigidbody.html" title="速度を基準とした物理位置計算コンポーネント " alt="basecross::Rigidbody" shape="rect" coords="370,616,545,640"/>
+<area href="classbasecross_1_1_sound_effect.html" title="サウンドエフェクトコンポーネント " alt="basecross::SoundEffect" shape="rect" coords="370,672,545,696"/>
+<area href="classbasecross_1_1_string_sprite.html" title="StringSpriteコンポーネント(文字列表示) " alt="basecross::StringSprite" shape="rect" coords="370,728,545,752"/>
+<area href="classbasecross_1_1_string_sprite.html" title="StringSpriteコンポーネント(文字列表示) " alt="basecross::StringSprite" shape="rect" coords="370,784,545,808"/>
+<area href="classbasecross_1_1_transform.html" title="変換コンポーネント " alt="basecross::Transform" shape="rect" coords="370,840,545,864"/>
+<area href="classbasecross_1_1_collision_manager.html" alt="basecross::CollisionManager" shape="rect" coords="740,112,915,136"/>
+<area href="classbasecross_1_1_multi_particle.html" title="マルチエフェクト （マルチパーティクル） " alt="basecross::MultiParticle" shape="rect" coords="740,168,915,192"/>
+<area href="classbasecross_1_1_particle_manager.html" title="パーティクルマネージャ " alt="basecross::ParticleManager" shape="rect" coords="740,224,915,248"/>
+<area href="classbasecross_1_1_s_s5ssae.html" alt="basecross::SS5ssae" shape="rect" coords="740,280,915,304"/>
+<area href="classbasecross_1_1_s_s_part.html" alt="basecross::SSPart" shape="rect" coords="740,336,915,360"/>
+<area href="classbasecross_1_1_stage_cell_map.html" alt="basecross::StageCellMap" shape="rect" coords="740,392,915,416"/>
+<area href="classbasecross_1_1_scene_base.html" title="シーン親クラス " alt="basecross::SceneBase" shape="rect" coords="925,112,1100,136"/>
+<area href="classbasecross_1_1_multi_view.html" title="マルチビュー " alt="basecross::MultiView" shape="rect" coords="1480,112,1655,136"/>
+<area href="classbasecross_1_1_single_view.html" title="シングルビュー " alt="basecross::SingleView" shape="rect" coords="1480,168,1655,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0fdcddc70f5d09d39d7b438961aa74df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shape_interface.html#a0fdcddc70f5d09d39d7b438961aa74df">ShapeInterface</a> ()</td></tr>
+<tr class="memdesc:a0fdcddc70f5d09d39d7b438961aa74df"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a0fdcddc70f5d09d39d7b438961aa74df">[詳解]</a><br /></td></tr>
+<tr class="separator:a0fdcddc70f5d09d39d7b438961aa74df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797cf929b1b08ed1ad6713b7490afea8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shape_interface.html#a797cf929b1b08ed1ad6713b7490afea8">~ShapeInterface</a> ()</td></tr>
+<tr class="memdesc:a797cf929b1b08ed1ad6713b7490afea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#a797cf929b1b08ed1ad6713b7490afea8">[詳解]</a><br /></td></tr>
+<tr class="separator:a797cf929b1b08ed1ad6713b7490afea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57ea59e6b29af440b502c3f0a0de901"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shape_interface.html#ac57ea59e6b29af440b502c3f0a0de901">OnUpdate</a> ()=0</td></tr>
+<tr class="memdesc:ac57ea59e6b29af440b502c3f0a0de901"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnUpdate処理  <a href="#ac57ea59e6b29af440b502c3f0a0de901">[詳解]</a><br /></td></tr>
+<tr class="separator:ac57ea59e6b29af440b502c3f0a0de901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97528cab80c9dce84b8de0215c2c01e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shape_interface.html#a97528cab80c9dce84b8de0215c2c01e5">OnUpdate2</a> ()</td></tr>
+<tr class="memdesc:a97528cab80c9dce84b8de0215c2c01e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnUpdate2処理.<br />
+ ＊アップデート後処理 ＊純粋仮想関数にしない  <a href="#a97528cab80c9dce84b8de0215c2c01e5">[詳解]</a><br /></td></tr>
+<tr class="separator:a97528cab80c9dce84b8de0215c2c01e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cc6e613ac354a7551fd26acac8304e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_shape_interface.html#ab3cc6e613ac354a7551fd26acac8304e">OnDraw</a> ()=0</td></tr>
+<tr class="memdesc:ab3cc6e613ac354a7551fd26acac8304e"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnDraw処理  <a href="#ab3cc6e613ac354a7551fd26acac8304e">[詳解]</a><br /></td></tr>
+<tr class="separator:ab3cc6e613ac354a7551fd26acac8304e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>UpdateとDrawのインターフェイス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a0fdcddc70f5d09d39d7b438961aa74df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdcddc70f5d09d39d7b438961aa74df">&#9670;&nbsp;</a></span>ShapeInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::ShapeInterface::ShapeInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+
+</div>
+</div>
+<a id="a797cf929b1b08ed1ad6713b7490afea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797cf929b1b08ed1ad6713b7490afea8">&#9670;&nbsp;</a></span>~ShapeInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual basecross::ShapeInterface::~ShapeInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ab3cc6e613ac354a7551fd26acac8304e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3cc6e613ac354a7551fd26acac8304e">&#9670;&nbsp;</a></span>OnDraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basecross::ShapeInterface::OnDraw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OnDraw処理 </p>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+<p><a class="el" href="classbasecross_1_1_scene_base.html#ad509d20fad182bdc4af1cf3c29648cce">basecross::SceneBase</a>, <a class="el" href="classbasecross_1_1_p_n_t_bone_model_draw.html#a814103b45b2167852a76d8312ed2bfdb">basecross::PNTBoneModelDraw</a>, <a class="el" href="classbasecross_1_1_stage.html#a471a3b039c1b6ef61a5c81dca29d8ef3">basecross::Stage</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_model_draw.html#a3de50afb594f6b9064e59077976c7f41">basecross::PNTStaticModelDraw</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_instance_draw.html#a89f04b4e0214e3988f93a5671a05727c">basecross::PNTStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_draw.html#ae99f0c0ca954aeefb2f863946b6acf0b">basecross::PNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_static_instance_draw.html#a8cb2666ebc88e3ffcce35e8c43904f8f">basecross::PCTStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_static_draw.html#a40b5ba7b048927b5dff10d943c87c560">basecross::PCTStaticDraw</a>, <a class="el" href="classbasecross_1_1_collision_rect.html#a88f2f718c49431c3b5bc6a93f34de8d1">basecross::CollisionRect</a>, <a class="el" href="classbasecross_1_1_stage_cell_map.html#ae2d70addf9612cdcde8e463e34547a5b">basecross::StageCellMap</a>, <a class="el" href="classbasecross_1_1_p_t_static_instance_draw.html#a32b12a51a478d208edca99e041465f4f">basecross::PTStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_n_tn_t_bone_model_draw.html#aaffe01753b0e7a539cf68f1042003b91">basecross::BcPNTnTBoneModelDraw</a>, <a class="el" href="classbasecross_1_1_p_t_static_draw.html#aca618e870aff18548bebf12cde1212ff">basecross::PTStaticDraw</a>, <a class="el" href="classbasecross_1_1_collision_triangles.html#aa6e18796d78ffa2bd3b22e2a5005ac35">basecross::CollisionTriangles</a>, <a class="el" href="classbasecross_1_1_p_c_static_instance_draw.html#a8a33fc37a06e765fc69a86b801d668d5">basecross::PCStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_draw.html#aa5bcd3a1662a02b6096c928b4684b482">basecross::PNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_c_static_draw.html#a2e63370dd570f31fe66f0f179c02ec20">basecross::PCStaticDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_n_tn_t_static_model_draw.html#af6c93b4fa85846cdbfba66b9d67f30a4">basecross::BcPNTnTStaticModelDraw</a>, <a class="el" href="classbasecross_1_1_particle_manager.html#a48f44bd53def9edd94ef199c6447e152">basecross::ParticleManager</a>, <a class="el" href="classbasecross_1_1_action.html#a315abb076abead0740f319d4ea391380">basecross::Action</a>, <a class="el" href="classbasecross_1_1_collision_obb.html#a7a68c6ab16915f595fcf4b89cde2a2a7">basecross::CollisionObb</a>, <a class="el" href="classbasecross_1_1_bc_p_n_tn_t_static_draw.html#a5f614b6eceeefa2b3f0b7b943b32bdc6">basecross::BcPNTnTStaticDraw</a>, <a class="el" href="classbasecross_1_1_multi_particle.html#a95e8dea2cf111d686b1cf367b15132f5">basecross::MultiParticle</a>, <a class="el" href="classbasecross_1_1_p_c_t_static_draw.html#a54a63d4356a5fef9cb4117d0b5baaea2">basecross::PCTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_t_static_draw.html#a9729615edc6d9e622cc9a6a1ae68663e">basecross::PTStaticDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_n_t_bone_model_draw.html#a1af6caa866e69d1584533c06b3afb942">basecross::BcPNTBoneModelDraw</a>, <a class="el" href="classbasecross_1_1_p_c_static_draw.html#a5b9724f309102ed378f36ed9cf3c93c0">basecross::PCStaticDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_n_t_static_model_draw.html#a09d0bc43dcb2a6239b8622da474b565d">basecross::BcPNTStaticModelDraw</a>, <a class="el" href="classbasecross_1_1_collision_capsule.html#a01ddf39fd68ed6392989df9583c0f89a">basecross::CollisionCapsule</a>, <a class="el" href="classbasecross_1_1_p_n_t_dynamic_draw.html#a0378dead78345bc03a60138f7d36c486">basecross::PNTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_dynamic_draw.html#a6fe002ef1efa6e293d8a46ef23b2be87">basecross::PCTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_n_t_static_draw.html#a7982065facf7a72702798afcde9f1c33">basecross::BcPNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_c_t_static_draw.html#a95aa68125c03a4b06f93416f69406e67">basecross::BcPCTStaticDraw</a>, <a class="el" href="classbasecross_1_1_s_s5ssae.html#a05d915a07dc10390caf827b86fac067f">basecross::SS5ssae</a>, <a class="el" href="classbasecross_1_1_p_t_dynamic_draw.html#a4fc3cd06436d021507cee0079ae47839">basecross::PTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_game_object.html#afd7624d6325b3b3faf45fc2addf19d87">basecross::GameObject</a>, <a class="el" href="classbasecross_1_1_bc_p_t_static_draw.html#a8746545b333a08b121b151b250cc7738">basecross::BcPTStaticDraw</a>, <a class="el" href="classbasecross_1_1_s_s_part.html#aca1391d3bcb2f82c66b58ae90e69b1e1">basecross::SSPart</a>, <a class="el" href="classbasecross_1_1_p_c_dynamic_draw.html#a46e097a2be4244c744a40e0baf439c5c">basecross::PCDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_sprite_draw.html#a2928ae7531138fc7dabf7fa47101af50">basecross::PCTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_c_static_draw.html#afbf72b882870cb4184d4d2bb53369c8c">basecross::BcPCStaticDraw</a>, <a class="el" href="classbasecross_1_1_collision_sphere.html#aaace18a7c131032dcc486a0348cf75e5">basecross::CollisionSphere</a>, <a class="el" href="classbasecross_1_1_multi_view.html#a6a75f53a890e47fd49bd13b309f6e125">basecross::MultiView</a>, <a class="el" href="classbasecross_1_1_p_t_sprite_draw.html#a24ed2c96d386499656dbe8b69013ea4b">basecross::PTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_path_search.html#af754155c56cb1287e9e43fe9ac089dfb">basecross::PathSearch</a>, <a class="el" href="classbasecross_1_1_p_c_sprite_draw.html#ae4956dbe8c8e28ea04ed4dc747579d06">basecross::PCSpriteDraw</a>, <a class="el" href="classbasecross_1_1_single_view.html#a61af287e267fe42792ac35e1153a5f1e">basecross::SingleView</a>, <a class="el" href="classbasecross_1_1_multi_sound_effect.html#a0c0decdc9d12e17c7e29bdd96caa145c">basecross::MultiSoundEffect</a>, <a class="el" href="classbasecross_1_1_p_c_t_sprite_draw.html#a1330a8fd0c14d760af96c54a8d308dcd">basecross::PCTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_view_base.html#a2986036d49301b4b9eccbf5cd4526608">basecross::ViewBase</a>, <a class="el" href="classbasecross_1_1_sound_effect.html#acc961c90e9846b021f5c0a901b00fe91">basecross::SoundEffect</a>, <a class="el" href="classbasecross_1_1_p_t_sprite_draw.html#a19a7a3392614b6c6a362950f713dd3a6">basecross::PTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_collision.html#aa82d8bb04d20ddb1a15c3f118381d19b">basecross::Collision</a>, <a class="el" href="classbasecross_1_1_p_c_t_particle_draw.html#a394cef8623ec9744d0470265bcd93e31">basecross::PCTParticleDraw</a>, <a class="el" href="classbasecross_1_1_play_music.html#acdf3b81f05342b92bf2a3b525f29c11c">basecross::PlayMusic</a>, <a class="el" href="classbasecross_1_1_p_c_sprite_draw.html#ab5c1944e7d5328b5957c0ebd175627b3">basecross::PCSpriteDraw</a>, <a class="el" href="classbasecross_1_1_multi_string_sprite.html#aa08a7958571561e358e752cd668abad0">basecross::MultiStringSprite</a>, <a class="el" href="classbasecross_1_1_shadowmap.html#a33673075b400b4607ea2708111b56f84">basecross::Shadowmap</a>, <a class="el" href="classbasecross_1_1_transform.html#ae854616f57481cc9fecc22ed1828275e">basecross::Transform</a>, <a class="el" href="classbasecross_1_1_camera.html#a535c9b9192cad1b90cb2238caaf329f7">basecross::Camera</a>, <a class="el" href="classbasecross_1_1_rigidbody.html#a75cc57cda91d09ad6b803557c4f7cba0">basecross::Rigidbody</a>, <a class="el" href="classbasecross_1_1_p_c_t_particle_draw.html#a7ec301c39bc470f6ca2d4c2550a9832d">basecross::PCTParticleDraw</a>, <a class="el" href="classbasecross_1_1_string_sprite.html#aa5fd8480b54bbfffe54dbf108e38f9f4">basecross::StringSprite</a>, <a class="el" href="classbasecross_1_1_shadowmap.html#abc6f088c990b7822c871742f0a31c969">basecross::Shadowmap</a>, <a class="el" href="classbasecross_1_1_action_component.html#ae1683b9067a373e4ad0d17ab221a3aab">basecross::ActionComponent</a>, <a class="el" href="classbasecross_1_1_string_sprite.html#aaf3f185d26789965ebac14c893e05b0c">basecross::StringSprite</a> (計66項目)で実装されています。</p>
+
+</div>
+</div>
+<a id="ac57ea59e6b29af440b502c3f0a0de901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57ea59e6b29af440b502c3f0a0de901">&#9670;&nbsp;</a></span>OnUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basecross::ShapeInterface::OnUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OnUpdate処理 </p>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+<p><a class="el" href="classbasecross_1_1_scene_base.html#a65dce33a3d3f79a0958c8095505c49ce">basecross::SceneBase</a>, <a class="el" href="classbasecross_1_1_p_n_t_bone_model_draw.html#ad3fb1d7b604f5e42eae212ac94b25447">basecross::PNTBoneModelDraw</a>, <a class="el" href="classbasecross_1_1_stage.html#aba7cd60452da452ceca5a2fdc469f130">basecross::Stage</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_model_draw.html#aed1722f14015aaab5b6bcd49728fac1b">basecross::PNTStaticModelDraw</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_instance_draw.html#a9ba03426210129bb1733ee342551c86b">basecross::PNTStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_draw.html#a41c485d61f6f436e6af8e73bca04591f">basecross::PNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_static_instance_draw.html#a9def9dbd1e2f82f49bb6c7e0a42b7b2f">basecross::PCTStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_static_draw.html#a7218c5cf475be6fdf6c27ba2334bbcc7">basecross::PCTStaticDraw</a>, <a class="el" href="classbasecross_1_1_stage_cell_map.html#a4291c8a771dcb38899c81c0050e20a4c">basecross::StageCellMap</a>, <a class="el" href="classbasecross_1_1_p_t_static_instance_draw.html#ad55aef0ff8917793a44ba67a4cbc1352">basecross::PTStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_p_t_static_draw.html#a7ff28c1acb2ea1c97b73a2b9fe4d2046">basecross::PTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_c_static_instance_draw.html#aed16fe989971a14d49185773a927f03b">basecross::PCStaticInstanceDraw</a>, <a class="el" href="classbasecross_1_1_p_n_t_static_draw.html#a41c485d61f6f436e6af8e73bca04591f">basecross::PNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_collision_manager.html#a7ba55716a376b5b883e86e603e7ca64f">basecross::CollisionManager</a>, <a class="el" href="classbasecross_1_1_p_c_static_draw.html#adc963e033aa0cf4f8d9b05e9570e62df">basecross::PCStaticDraw</a>, <a class="el" href="classbasecross_1_1_particle_manager.html#aa667d1292b187ad7488c45136a205f24">basecross::ParticleManager</a>, <a class="el" href="classbasecross_1_1_action.html#a93d53310c2ac437dba93a9e22fb5a797">basecross::Action</a>, <a class="el" href="classbasecross_1_1_bc_p_n_tn_t_static_draw.html#af7cc03fde8fa9d2da874ea7d55da72f6">basecross::BcPNTnTStaticDraw</a>, <a class="el" href="classbasecross_1_1_multi_particle.html#a80c2aaa049485c52abf731f9faaae714">basecross::MultiParticle</a>, <a class="el" href="classbasecross_1_1_p_c_t_static_draw.html#a7218c5cf475be6fdf6c27ba2334bbcc7">basecross::PCTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_t_static_draw.html#a7ff28c1acb2ea1c97b73a2b9fe4d2046">basecross::PTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_c_static_draw.html#adc963e033aa0cf4f8d9b05e9570e62df">basecross::PCStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_n_t_dynamic_draw.html#afea0c813a43850651f7b35f4c0aab973">basecross::PNTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_dynamic_draw.html#aa3c329c65faeb084ac88bc85c7898628">basecross::PCTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_n_t_static_draw.html#afd0c20e159f392ec3160064dc47b5210">basecross::BcPNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_s_s5ssae.html#aba56e960299a85beebce5e09e19d3ab9">basecross::SS5ssae</a>, <a class="el" href="classbasecross_1_1_bc_p_c_t_static_draw.html#a74ac2457eface9356e92abc8c9a0ab2b">basecross::BcPCTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_t_dynamic_draw.html#a48d956bc40b39298a7becb9eef6d14ca">basecross::PTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_t_static_draw.html#a8cde7938e23080a4d50a9de3ba487a53">basecross::BcPTStaticDraw</a>, <a class="el" href="classbasecross_1_1_move_component.html#a2b05a2dd1da06e6e630cebae4b5a73ec">basecross::MoveComponent</a>, <a class="el" href="classbasecross_1_1_game_object.html#a9336224ab98b9d6acfa8e4f617bc119a">basecross::GameObject</a>, <a class="el" href="classbasecross_1_1_p_c_dynamic_draw.html#a01f49f2fc4b00bb0001a570b43ae04ce">basecross::PCDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_sprite_draw.html#afec6886c3d885b7cc2edebc553cf3bbb">basecross::PCTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_bc_p_c_static_draw.html#a0c220d30b77e75d25a255ceef9b8061c">basecross::BcPCStaticDraw</a>, <a class="el" href="classbasecross_1_1_multi_view.html#adf892b78be814f5494db0772111dba87">basecross::MultiView</a>, <a class="el" href="classbasecross_1_1_p_t_sprite_draw.html#a984fbf917a1638e43d4254762f73ced5">basecross::PTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_path_search.html#a4a72fa2dea75061f0fb67bef8f82b1e2">basecross::PathSearch</a>, <a class="el" href="classbasecross_1_1_p_c_sprite_draw.html#a0938915a37f2a60af204f11d0bd1029f">basecross::PCSpriteDraw</a>, <a class="el" href="classbasecross_1_1_single_view.html#ade8183912be054ecc8667ec23fb2ac1d">basecross::SingleView</a>, <a class="el" href="classbasecross_1_1_multi_sound_effect.html#a425bdec377ac46c1277e7d87403a29f7">basecross::MultiSoundEffect</a>, <a class="el" href="classbasecross_1_1_p_c_t_sprite_draw.html#afec6886c3d885b7cc2edebc553cf3bbb">basecross::PCTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_view_base.html#acd360de0b79393b3780055fab9caf617">basecross::ViewBase</a>, <a class="el" href="classbasecross_1_1_sound_effect.html#a432c425ad618c36898c0404856e57906">basecross::SoundEffect</a>, <a class="el" href="classbasecross_1_1_rotate_component.html#a8377551da8c2279a65fc0d3adaf83f36">basecross::RotateComponent</a>, <a class="el" href="classbasecross_1_1_p_t_sprite_draw.html#a984fbf917a1638e43d4254762f73ced5">basecross::PTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_look_at_camera.html#a7bdf7a432ebf1b676ebb5d442533d6a9">basecross::LookAtCamera</a>, <a class="el" href="classbasecross_1_1_p_c_t_particle_draw.html#af31a0bc5719597d6456f6359b6055f00">basecross::PCTParticleDraw</a>, <a class="el" href="classbasecross_1_1_play_music.html#ad4d9b8691ff635c83fd501ae331439d3">basecross::PlayMusic</a>, <a class="el" href="classbasecross_1_1_p_c_sprite_draw.html#a0938915a37f2a60af204f11d0bd1029f">basecross::PCSpriteDraw</a>, <a class="el" href="classbasecross_1_1_multi_string_sprite.html#aa4e95f16e7de2e249c186775c1492460">basecross::MultiStringSprite</a>, <a class="el" href="classbasecross_1_1_shadowmap.html#a15c837987eccbbfab072b54cf781dd6f">basecross::Shadowmap</a>, <a class="el" href="classbasecross_1_1_transform.html#a0fe9680c8ec66cd449c34ee5fce4e3bf">basecross::Transform</a>, <a class="el" href="classbasecross_1_1_scale_component.html#ab12961cb7991391706f26b906d4bee20">basecross::ScaleComponent</a>, <a class="el" href="classbasecross_1_1_camera.html#aa1bfa1cda6c543a31de2cfcb8b0ab2f3">basecross::Camera</a>, <a class="el" href="classbasecross_1_1_rigidbody.html#a93cc5c579d2eb0f619b2697a3b1bb050">basecross::Rigidbody</a>, <a class="el" href="classbasecross_1_1_p_c_t_particle_draw.html#af31a0bc5719597d6456f6359b6055f00">basecross::PCTParticleDraw</a>, <a class="el" href="classbasecross_1_1_string_sprite.html#a602207d5b09c937de7e94542d2ed1057">basecross::StringSprite</a>, <a class="el" href="classbasecross_1_1_shadowmap.html#a15c837987eccbbfab072b54cf781dd6f">basecross::Shadowmap</a>, <a class="el" href="classbasecross_1_1_action_interval.html#a6d5062a1c0f39da18556e76d617705b6">basecross::ActionInterval</a>, <a class="el" href="classbasecross_1_1_collision.html#a8daf6213394683e0fab60f4f20aee6c0">basecross::Collision</a>, <a class="el" href="classbasecross_1_1_string_sprite.html#a4a7d7785bd59d8904c0ecc86388141a7">basecross::StringSprite</a> (計61項目)で実装されています。</p>
+
+</div>
+</div>
+<a id="a97528cab80c9dce84b8de0215c2c01e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97528cab80c9dce84b8de0215c2c01e5">&#9670;&nbsp;</a></span>OnUpdate2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basecross::ShapeInterface::OnUpdate2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OnUpdate2処理.<br />
+ ＊アップデート後処理 ＊純粋仮想関数にしない </p>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

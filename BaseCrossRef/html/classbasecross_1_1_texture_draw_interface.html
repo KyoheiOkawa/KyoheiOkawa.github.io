@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::TextureDrawInterface クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_texture_draw_interface.html">TextureDrawInterface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classbasecross_1_1_texture_draw_interface-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::TextureDrawInterface クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>テクスチャ描画インターフェイス  
+ <a href="classbasecross_1_1_texture_draw_interface.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_dx11_full_lib_2_draw_components_8h_source.html">DrawComponents.h</a>&gt;</code></p>
+<div class="dynheader">
+basecross::TextureDrawInterface の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classbasecross_1_1_texture_draw_interface.png" usemap="#basecross::TextureDrawInterface_map" alt=""/>
+  <map id="basecross::TextureDrawInterface_map" name="basecross::TextureDrawInterface_map">
+<area href="classbasecross_1_1_bc_static_base_draw.html" title="Basic描画コンポーネントの親(3D描画) " alt="basecross::BcStaticBaseDraw" shape="rect" coords="208,56,406,80"/>
+<area href="classbasecross_1_1_p_c_t_dynamic_draw.html" title="PCTDynamic描画コンポーネント " alt="basecross::PCTDynamicDraw" shape="rect" coords="208,112,406,136"/>
+<area href="classbasecross_1_1_p_c_t_sprite_draw.html" title="PCTSprite描画コンポーネント " alt="basecross::PCTSpriteDraw" shape="rect" coords="208,168,406,192"/>
+<area href="classbasecross_1_1_p_c_t_sprite_draw.html" title="PCTSprite描画コンポーネント " alt="basecross::PCTSpriteDraw" shape="rect" coords="208,224,406,248"/>
+<area href="classbasecross_1_1_p_c_t_static_draw.html" title="PCTStatic描画コンポーネント " alt="basecross::PCTStaticDraw" shape="rect" coords="208,280,406,304"/>
+<area href="classbasecross_1_1_p_n_t_dynamic_draw.html" title="PNTDynamic描画コンポーネント " alt="basecross::PNTDynamicDraw" shape="rect" coords="208,336,406,360"/>
+<area href="classbasecross_1_1_p_t_dynamic_draw.html" title="PTDynamic描画コンポーネント " alt="basecross::PTDynamicDraw" shape="rect" coords="208,392,406,416"/>
+<area href="classbasecross_1_1_p_t_sprite_draw.html" title="PTSprite描画コンポーネント " alt="basecross::PTSpriteDraw" shape="rect" coords="208,448,406,472"/>
+<area href="classbasecross_1_1_p_t_sprite_draw.html" title="PTSprite描画コンポーネント " alt="basecross::PTSpriteDraw" shape="rect" coords="208,504,406,528"/>
+<area href="classbasecross_1_1_p_t_static_draw.html" title="PTStatic描画コンポーネント " alt="basecross::PTStaticDraw" shape="rect" coords="208,560,406,584"/>
+<area href="classbasecross_1_1_static_base_draw.html" title="static描画コンポーネントの親(頂点を変更する場合も可) " alt="basecross::StaticBaseDraw" shape="rect" coords="208,616,406,640"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_texture_draw_interface_1_1_impl.html">Impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a69186ac9cc528df2ad6470f5c9de0d98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a69186ac9cc528df2ad6470f5c9de0d98">TextureDrawInterface</a> ()</td></tr>
+<tr class="memdesc:a69186ac9cc528df2ad6470f5c9de0d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a69186ac9cc528df2ad6470f5c9de0d98">[詳解]</a><br /></td></tr>
+<tr class="separator:a69186ac9cc528df2ad6470f5c9de0d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9740731b1c6223eb4bdb26c099565f54"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a9740731b1c6223eb4bdb26c099565f54">~TextureDrawInterface</a> ()</td></tr>
+<tr class="memdesc:a9740731b1c6223eb4bdb26c099565f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#a9740731b1c6223eb4bdb26c099565f54">[詳解]</a><br /></td></tr>
+<tr class="separator:a9740731b1c6223eb4bdb26c099565f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be61cd00b2136e7800a76bf7862830f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a5be61cd00b2136e7800a76bf7862830f">SetTextureResource</a> (const shared_ptr&lt; <a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a> &gt; &amp;TextureRes)</td></tr>
+<tr class="memdesc:a5be61cd00b2136e7800a76bf7862830f"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャリソースの設定  <a href="#a5be61cd00b2136e7800a76bf7862830f">[詳解]</a><br /></td></tr>
+<tr class="separator:a5be61cd00b2136e7800a76bf7862830f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26cf5c6716ae30457ca8f556f26c3577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a26cf5c6716ae30457ca8f556f26c3577">SetTextureResource</a> (const wstring &amp;TextureKey)</td></tr>
+<tr class="memdesc:a26cf5c6716ae30457ca8f556f26c3577"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャリソースの設定  <a href="#a26cf5c6716ae30457ca8f556f26c3577">[詳解]</a><br /></td></tr>
+<tr class="separator:a26cf5c6716ae30457ca8f556f26c3577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c4c617ff31e0ad6bc95ace675ba4a2"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a22c4c617ff31e0ad6bc95ace675ba4a2">GetTextureResource</a> () const</td></tr>
+<tr class="memdesc:a22c4c617ff31e0ad6bc95ace675ba4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャリソースの取得  <a href="#a22c4c617ff31e0ad6bc95ace675ba4a2">[詳解]</a><br /></td></tr>
+<tr class="separator:a22c4c617ff31e0ad6bc95ace675ba4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69186ac9cc528df2ad6470f5c9de0d98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a69186ac9cc528df2ad6470f5c9de0d98">TextureDrawInterface</a> ()</td></tr>
+<tr class="memdesc:a69186ac9cc528df2ad6470f5c9de0d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a69186ac9cc528df2ad6470f5c9de0d98">[詳解]</a><br /></td></tr>
+<tr class="separator:a69186ac9cc528df2ad6470f5c9de0d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9fc79fec1f8fd456e465283540138be"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#ae9fc79fec1f8fd456e465283540138be">~TextureDrawInterface</a> ()</td></tr>
+<tr class="memdesc:ae9fc79fec1f8fd456e465283540138be"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#ae9fc79fec1f8fd456e465283540138be">[詳解]</a><br /></td></tr>
+<tr class="separator:ae9fc79fec1f8fd456e465283540138be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62ea79f51cdc3cfa0a467ae75352dc7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#ab62ea79f51cdc3cfa0a467ae75352dc7">SetTextureResource</a> (const shared_ptr&lt; <a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a> &gt; &amp;TextureRes)</td></tr>
+<tr class="memdesc:ab62ea79f51cdc3cfa0a467ae75352dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャリソースの設定  <a href="#ab62ea79f51cdc3cfa0a467ae75352dc7">[詳解]</a><br /></td></tr>
+<tr class="separator:ab62ea79f51cdc3cfa0a467ae75352dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c628286d050c9885aa2119da8c57b93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a8c628286d050c9885aa2119da8c57b93">SetTextureResource</a> (const wstring &amp;TextureKey)</td></tr>
+<tr class="memdesc:a8c628286d050c9885aa2119da8c57b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャリソースの設定  <a href="#a8c628286d050c9885aa2119da8c57b93">[詳解]</a><br /></td></tr>
+<tr class="separator:a8c628286d050c9885aa2119da8c57b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24841362dc4a9d43ad0f59f6532fb9e"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#aa24841362dc4a9d43ad0f59f6532fb9e">GetTextureResource</a> () const</td></tr>
+<tr class="memdesc:aa24841362dc4a9d43ad0f59f6532fb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャリソースの取得  <a href="#aa24841362dc4a9d43ad0f59f6532fb9e">[詳解]</a><br /></td></tr>
+<tr class="separator:aa24841362dc4a9d43ad0f59f6532fb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a60dde7a2dae5c92749cbd27a66006"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#a92a60dde7a2dae5c92749cbd27a66006">GetWrapSampler</a> () const</td></tr>
+<tr class="memdesc:a92a60dde7a2dae5c92749cbd27a66006"><td class="mdescLeft">&#160;</td><td class="mdescRight">ラッピングサンプラーかどうかを得る  <a href="#a92a60dde7a2dae5c92749cbd27a66006">[詳解]</a><br /></td></tr>
+<tr class="separator:a92a60dde7a2dae5c92749cbd27a66006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9a899df89fa10e45dc33c31599fdf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_texture_draw_interface.html#ade9a899df89fa10e45dc33c31599fdf4">SetWrapSampler</a> (bool b)</td></tr>
+<tr class="memdesc:ade9a899df89fa10e45dc33c31599fdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ラッピングサンプラーかどうか設定する  <a href="#ade9a899df89fa10e45dc33c31599fdf4">[詳解]</a><br /></td></tr>
+<tr class="separator:ade9a899df89fa10e45dc33c31599fdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>テクスチャ描画インターフェイス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a69186ac9cc528df2ad6470f5c9de0d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69186ac9cc528df2ad6470f5c9de0d98">&#9670;&nbsp;</a></span>TextureDrawInterface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::TextureDrawInterface::TextureDrawInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<p>テクスチャ描画インターフェイス </p>
+
+</div>
+</div>
+<a id="a9740731b1c6223eb4bdb26c099565f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9740731b1c6223eb4bdb26c099565f54">&#9670;&nbsp;</a></span>~TextureDrawInterface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::TextureDrawInterface::~TextureDrawInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+</div>
+</div>
+<a id="a69186ac9cc528df2ad6470f5c9de0d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69186ac9cc528df2ad6470f5c9de0d98">&#9670;&nbsp;</a></span>TextureDrawInterface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::TextureDrawInterface::TextureDrawInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+
+</div>
+</div>
+<a id="ae9fc79fec1f8fd456e465283540138be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9fc79fec1f8fd456e465283540138be">&#9670;&nbsp;</a></span>~TextureDrawInterface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual basecross::TextureDrawInterface::~TextureDrawInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aa24841362dc4a9d43ad0f59f6532fb9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24841362dc4a9d43ad0f59f6532fb9e">&#9670;&nbsp;</a></span>GetTextureResource() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a>&gt; basecross::TextureDrawInterface::GetTextureResource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>テクスチャリソースの取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd>テクスチャリソース </dd></dl>
+
+</div>
+</div>
+<a id="a22c4c617ff31e0ad6bc95ace675ba4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c4c617ff31e0ad6bc95ace675ba4a2">&#9670;&nbsp;</a></span>GetTextureResource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a> &gt; basecross::TextureDrawInterface::GetTextureResource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>テクスチャリソースの取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd>テクスチャリソース </dd></dl>
+
+</div>
+</div>
+<a id="a92a60dde7a2dae5c92749cbd27a66006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a60dde7a2dae5c92749cbd27a66006">&#9670;&nbsp;</a></span>GetWrapSampler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basecross::TextureDrawInterface::GetWrapSampler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ラッピングサンプラーかどうかを得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>ラッピングサンプラーかどうか </dd></dl>
+
+</div>
+</div>
+<a id="ab62ea79f51cdc3cfa0a467ae75352dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62ea79f51cdc3cfa0a467ae75352dc7">&#9670;&nbsp;</a></span>SetTextureResource() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basecross::TextureDrawInterface::SetTextureResource </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>TextureRes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャリソースの設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">TextureRes</td><td>テクスチャリソース </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+<p><a class="el" href="classbasecross_1_1_p_n_t_static_draw.html#a72d5dc9ce3cfc31a99ed6d240aca1f3a">basecross::PNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_dynamic_draw.html#aaf5958de56f88468fb58696f8a81d946">basecross::PCTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_t_dynamic_draw.html#a20be8efa3c81b98d560276172a0cc9c9">basecross::PTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_sprite_draw.html#a0c30586d7e1bfb2bbbbcd7d484c20fd4">basecross::PCTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_p_t_sprite_draw.html#a29f908bb73805c7aa9857cb098d03dc5">basecross::PTSpriteDraw</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a8c628286d050c9885aa2119da8c57b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c628286d050c9885aa2119da8c57b93">&#9670;&nbsp;</a></span>SetTextureResource() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basecross::TextureDrawInterface::SetTextureResource </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>TextureKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャリソースの設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">TextureKey</td><td>登録されているテクスチャキー </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+<p><a class="el" href="classbasecross_1_1_p_n_t_static_draw.html#a3e6de55fcf1dda8a000d270e13ebc1a4">basecross::PNTStaticDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_dynamic_draw.html#a03a05db7267b345f1e4da6efb53901e8">basecross::PCTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_t_dynamic_draw.html#a358050a6d9d3d7865d0f2da4c58886fe">basecross::PTDynamicDraw</a>, <a class="el" href="classbasecross_1_1_p_c_t_sprite_draw.html#abbd95d3c1cf3c5002008cdf7bbcf3301">basecross::PCTSpriteDraw</a>, <a class="el" href="classbasecross_1_1_p_t_sprite_draw.html#a856dc442a50b082a11988dc95639c73e">basecross::PTSpriteDraw</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a5be61cd00b2136e7800a76bf7862830f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be61cd00b2136e7800a76bf7862830f">&#9670;&nbsp;</a></span>SetTextureResource() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::TextureDrawInterface::SetTextureResource </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classbasecross_1_1_texture_resource.html">TextureResource</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>TextureRes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>テクスチャリソースの設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">TextureRes</td><td>テクスチャリソース </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a26cf5c6716ae30457ca8f556f26c3577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26cf5c6716ae30457ca8f556f26c3577">&#9670;&nbsp;</a></span>SetTextureResource() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::TextureDrawInterface::SetTextureResource </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>TextureKey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>テクスチャリソースの設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">TextureKey</td><td>登録されているテクスチャキー </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ade9a899df89fa10e45dc33c31599fdf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9a899df89fa10e45dc33c31599fdf4">&#9670;&nbsp;</a></span>SetWrapSampler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::TextureDrawInterface::SetWrapSampler </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ラッピングサンプラーかどうか設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>ラッピングサンプラーかどうか </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/Dx11FullLib/<a class="el" href="_dx11_full_lib_2_draw_components_8h_source.html">DrawComponents.h</a></li>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/Dx11FullLib/<a class="el" href="_dx11_full_lib_2_draw_components_8cpp.html">DrawComponents.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

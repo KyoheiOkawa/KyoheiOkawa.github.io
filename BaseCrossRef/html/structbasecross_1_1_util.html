@@ -1,0 +1,1170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::Util 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="structbasecross_1_1_util.html">Util</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="structbasecross_1_1_util-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::Util 構造体</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>その他のユーティリティ。static呼び出しをする  
+ <a href="structbasecross_1_1_util.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a5304e5ec03c30071539535fd75268d41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41">FloatModify</a> { <a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41acce34fd6320cd5e52295b72998199a8b">Default</a> = 0, 
+<a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41af2016b6a5882a8293083781fcbaaba18">Fixed</a>, 
+<a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41a0088639b96a93bdb4a01db3c47f1422a">Scientific</a>
+ }<tr class="memdesc:a5304e5ec03c30071539535fd75268d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">float型を文字列に変換する場合の形式  <a href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41">[詳解]</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a5304e5ec03c30071539535fd75268d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b80abf6e7feb1b79a099a91306aafca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a> { <a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafcaaff6c6236cb469e4aaa07eba99ea99bc8">Dec</a> = 0, 
+<a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafcaa33e678e29f7229ea70b55dab79a52467">Hex</a>, 
+<a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafcaa431863b0527f90341b61374059460ceb">Oct</a>
+ }<tr class="memdesc:a1b80abf6e7feb1b79a099a91306aafca"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数型を文字列に変換する場合の形式  <a href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">[詳解]</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a1b80abf6e7feb1b79a099a91306aafca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3e81360f242d8fb6bae1b7eb36ae6d05"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3e81360f242d8fb6bae1b7eb36ae6d05"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a3e81360f242d8fb6bae1b7eb36ae6d05">Maximum</a> (const T &amp;v1, const T &amp;v2)</td></tr>
+<tr class="memdesc:a3e81360f242d8fb6bae1b7eb36ae6d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">大きい方を求める.  <a href="#a3e81360f242d8fb6bae1b7eb36ae6d05">[詳解]</a><br /></td></tr>
+<tr class="separator:a3e81360f242d8fb6bae1b7eb36ae6d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24a3e04f9111f6e39a48fec33441e06"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad24a3e04f9111f6e39a48fec33441e06"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#ad24a3e04f9111f6e39a48fec33441e06">Minimum</a> (const T &amp;v1, const T &amp;v2)</td></tr>
+<tr class="memdesc:ad24a3e04f9111f6e39a48fec33441e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">小さい方を求める.  <a href="#ad24a3e04f9111f6e39a48fec33441e06">[詳解]</a><br /></td></tr>
+<tr class="separator:ad24a3e04f9111f6e39a48fec33441e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad580699e1012c7355fd92ee9aa8e75a9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TCreateFunc &gt; </td></tr>
+<tr class="memitem:ad580699e1012c7355fd92ee9aa8e75a9"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#ad580699e1012c7355fd92ee9aa8e75a9">DemandCreate</a> (ComPtr&lt; T &gt; &amp;comPtr, std::mutex &amp;mutex, TCreateFunc createFunc)</td></tr>
+<tr class="memdesc:ad580699e1012c7355fd92ee9aa8e75a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">安全にCOMインターフェイスのポインタを取得するヘルパー関数.  <a href="#ad580699e1012c7355fd92ee9aa8e75a9">[詳解]</a><br /></td></tr>
+<tr class="separator:ad580699e1012c7355fd92ee9aa8e75a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce45bd319c4df5cfae7e00ff3c8d9f0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adce45bd319c4df5cfae7e00ff3c8d9f0"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#adce45bd319c4df5cfae7e00ff3c8d9f0">GetComPtr</a> (ComPtr&lt; T &gt; &amp;comPtr)</td></tr>
+<tr class="memdesc:adce45bd319c4df5cfae7e00ff3c8d9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">安全にCOMインターフェイスのポインタを取得するヘルパー関数.<br />
+ 無効の場合は例外を出す  <a href="#adce45bd319c4df5cfae7e00ff3c8d9f0">[詳解]</a><br /></td></tr>
+<tr class="separator:adce45bd319c4df5cfae7e00ff3c8d9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe4db25860e2e6316237b8742e235e2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#adfe4db25860e2e6316237b8742e235e2">WStrTrim</a> (wstring &amp;wstr, const wchar_t *TrimCharList=L&quot; \\&quot;)</td></tr>
+<tr class="memdesc:adfe4db25860e2e6316237b8742e235e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">両端から空白を取り除く<br />
+ 元になる文字列から取り除く  <a href="#adfe4db25860e2e6316237b8742e235e2">[詳解]</a><br /></td></tr>
+<tr class="separator:adfe4db25860e2e6316237b8742e235e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0526a7e9139fdcca96120b90381a8ff1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a0526a7e9139fdcca96120b90381a8ff1">WStoMB</a> (const wstring &amp;src, string &amp;dest)</td></tr>
+<tr class="memdesc:a0526a7e9139fdcca96120b90381a8ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワイド文字列からマルチバイト文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要  <a href="#a0526a7e9139fdcca96120b90381a8ff1">[詳解]</a><br /></td></tr>
+<tr class="separator:a0526a7e9139fdcca96120b90381a8ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4a79ba7e044c2ad3f227c6d38fc954"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a6f4a79ba7e044c2ad3f227c6d38fc954">ConvertWstringtoUtf8</a> (const wstring &amp;src, string &amp;dest)</td></tr>
+<tr class="memdesc:a6f4a79ba7e044c2ad3f227c6d38fc954"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワイド文字列からマルチバイトUTF8文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要  <a href="#a6f4a79ba7e044c2ad3f227c6d38fc954">[詳解]</a><br /></td></tr>
+<tr class="separator:a6f4a79ba7e044c2ad3f227c6d38fc954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb34f32140845e12845868200b548b80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#acb34f32140845e12845868200b548b80">ConvertUtf8toWstring</a> (const string &amp;src, wstring &amp;dest)</td></tr>
+<tr class="memdesc:acb34f32140845e12845868200b548b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">マルチバイトUTF8文字からワイド文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要  <a href="#acb34f32140845e12845868200b548b80">[詳解]</a><br /></td></tr>
+<tr class="separator:acb34f32140845e12845868200b548b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da8e1c2772e146cc26c93deff32022b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a7da8e1c2772e146cc26c93deff32022b">MBtoWS</a> (const string &amp;src, wstring &amp;dest)</td></tr>
+<tr class="memdesc:a7da8e1c2772e146cc26c93deff32022b"><td class="mdescLeft">&#160;</td><td class="mdescRight">マルチバイト文字列からワイド文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要  <a href="#a7da8e1c2772e146cc26c93deff32022b">[詳解]</a><br /></td></tr>
+<tr class="separator:a7da8e1c2772e146cc26c93deff32022b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5671e0938ea75f9a075a2123ae3f3e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a9e5671e0938ea75f9a075a2123ae3f3e">WStrToTokenVector</a> (vector&lt; wstring &gt; &amp;wstrvec, const wstring &amp;line, wchar_t delimiter)</td></tr>
+<tr class="memdesc:a9e5671e0938ea75f9a075a2123ae3f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列をデリミタ文字により区切って配列に保存  <a href="#a9e5671e0938ea75f9a075a2123ae3f3e">[詳解]</a><br /></td></tr>
+<tr class="separator:a9e5671e0938ea75f9a075a2123ae3f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31729b05ec6f44eddc4bc68011190fda"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a31729b05ec6f44eddc4bc68011190fda"><td class="memTemplItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a31729b05ec6f44eddc4bc68011190fda">GetWSTypeName</a> ()</td></tr>
+<tr class="memdesc:a31729b05ec6f44eddc4bc68011190fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">T型の内部機器別名を得る（wstring）  <a href="#a31729b05ec6f44eddc4bc68011190fda">[詳解]</a><br /></td></tr>
+<tr class="separator:a31729b05ec6f44eddc4bc68011190fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691ec32e35715beb9976a098f99abf6e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a691ec32e35715beb9976a098f99abf6e"><td class="memTemplItemLeft" align="right" valign="top">static string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a691ec32e35715beb9976a098f99abf6e">GetMBTypeName</a> ()</td></tr>
+<tr class="memdesc:a691ec32e35715beb9976a098f99abf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">T型の内部機器別名を得る（string）  <a href="#a691ec32e35715beb9976a098f99abf6e">[詳解]</a><br /></td></tr>
+<tr class="separator:a691ec32e35715beb9976a098f99abf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b2bad785a55eb6db010941ee935ce3"><td class="memItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a06b2bad785a55eb6db010941ee935ce3">FloatToWStr</a> (float Val, streamsize Precision=0, <a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41">FloatModify</a> Modify=<a class="el" href="namespacebasecross.html#a93ff14551a943405192929376ea937cca7a1920d61156abc05a60135aefe8bc67">FloatModify::Default</a>)</td></tr>
+<tr class="memdesc:a06b2bad785a55eb6db010941ee935ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮動小数点を文字列に変換する（wstring版）  <a href="#a06b2bad785a55eb6db010941ee935ce3">[詳解]</a><br /></td></tr>
+<tr class="separator:a06b2bad785a55eb6db010941ee935ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01304561312b7d064d02d05a1e056454"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a01304561312b7d064d02d05a1e056454">FloatToStr</a> (float Val, streamsize Precision=0, <a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41">FloatModify</a> Modify=<a class="el" href="namespacebasecross.html#a93ff14551a943405192929376ea937cca7a1920d61156abc05a60135aefe8bc67">FloatModify::Default</a>)</td></tr>
+<tr class="memdesc:a01304561312b7d064d02d05a1e056454"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮動小数点を文字列に変換する（string版）  <a href="#a01304561312b7d064d02d05a1e056454">[詳解]</a><br /></td></tr>
+<tr class="separator:a01304561312b7d064d02d05a1e056454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512a6fde34952792edb9c4977e52ddac"><td class="memItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a512a6fde34952792edb9c4977e52ddac">UintToWStr</a> (UINT num, <a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a> Modify=NumModify::Dec)</td></tr>
+<tr class="memdesc:a512a6fde34952792edb9c4977e52ddac"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsigned数値を文字列に変換する（wstring版）  <a href="#a512a6fde34952792edb9c4977e52ddac">[詳解]</a><br /></td></tr>
+<tr class="separator:a512a6fde34952792edb9c4977e52ddac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6ca073c82db2e018c7c26fea7e5fcc"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a6b6ca073c82db2e018c7c26fea7e5fcc">UintToStr</a> (UINT num, <a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a> Modify=NumModify::Dec)</td></tr>
+<tr class="memdesc:a6b6ca073c82db2e018c7c26fea7e5fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsigned数値を文字列に変換する（string版）  <a href="#a6b6ca073c82db2e018c7c26fea7e5fcc">[詳解]</a><br /></td></tr>
+<tr class="separator:a6b6ca073c82db2e018c7c26fea7e5fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f7dac8ec5aa61c228068ed7162eb98"><td class="memItemLeft" align="right" valign="top">static wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a45f7dac8ec5aa61c228068ed7162eb98">IntToWStr</a> (int num, <a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a> Modify=NumModify::Dec)</td></tr>
+<tr class="memdesc:a45f7dac8ec5aa61c228068ed7162eb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">signed数値を文字列に変換する（wstring版）  <a href="#a45f7dac8ec5aa61c228068ed7162eb98">[詳解]</a><br /></td></tr>
+<tr class="separator:a45f7dac8ec5aa61c228068ed7162eb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd8242ac6cd391f41fcc0708785ee8e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#addd8242ac6cd391f41fcc0708785ee8e">IntToStr</a> (int num, <a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a> Modify=NumModify::Dec)</td></tr>
+<tr class="memdesc:addd8242ac6cd391f41fcc0708785ee8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">signed数値を文字列に変換する（string版）  <a href="#addd8242ac6cd391f41fcc0708785ee8e">[詳解]</a><br /></td></tr>
+<tr class="separator:addd8242ac6cd391f41fcc0708785ee8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a203e3fa5cfa89395e58bdd9ff8bd53"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a5a203e3fa5cfa89395e58bdd9ff8bd53">DivProbability</a> (UINT Probability)</td></tr>
+<tr class="memdesc:a5a203e3fa5cfa89395e58bdd9ff8bd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probability分の1の確率で、trueを返す<br />
+ Probabilityは0より大きくなければならない（0除算はできない）  <a href="#a5a203e3fa5cfa89395e58bdd9ff8bd53">[詳解]</a><br /></td></tr>
+<tr class="separator:a5a203e3fa5cfa89395e58bdd9ff8bd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ba95cbe3beae6982bd6d9cc209c620"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasecross_1_1_util.html#a64ba95cbe3beae6982bd6d9cc209c620">RandZeroToOne</a> (bool ZeroOK=false)</td></tr>
+<tr class="memdesc:a64ba95cbe3beae6982bd6d9cc209c620"><td class="mdescLeft">&#160;</td><td class="mdescRight">0から1.0fの間の乱数を返す<br />
+ ZeroOKがfalseの場合、0が返る可能性はない（0.00001fになる）  <a href="#a64ba95cbe3beae6982bd6d9cc209c620">[詳解]</a><br /></td></tr>
+<tr class="separator:a64ba95cbe3beae6982bd6d9cc209c620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>その他のユーティリティ。static呼び出しをする </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a5304e5ec03c30071539535fd75268d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5304e5ec03c30071539535fd75268d41">&#9670;&nbsp;</a></span>FloatModify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41">basecross::Util::FloatModify</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>float型を文字列に変換する場合の形式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a5304e5ec03c30071539535fd75268d41acce34fd6320cd5e52295b72998199a8b"></a>Default&#160;</td><td class="fielddoc"><p>デフォルト（浮動小数点） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5304e5ec03c30071539535fd75268d41af2016b6a5882a8293083781fcbaaba18"></a>Fixed&#160;</td><td class="fielddoc"><p>数字を出力 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5304e5ec03c30071539535fd75268d41a0088639b96a93bdb4a01db3c47f1422a"></a>Scientific&#160;</td><td class="fielddoc"><p>e+09などの形式 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1b80abf6e7feb1b79a099a91306aafca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b80abf6e7feb1b79a099a91306aafca">&#9670;&nbsp;</a></span>NumModify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">basecross::Util::NumModify</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数型を文字列に変換する場合の形式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a1b80abf6e7feb1b79a099a91306aafcaaff6c6236cb469e4aaa07eba99ea99bc8"></a>Dec&#160;</td><td class="fielddoc"><p>10進数 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b80abf6e7feb1b79a099a91306aafcaa33e678e29f7229ea70b55dab79a52467"></a>Hex&#160;</td><td class="fielddoc"><p>16進数 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b80abf6e7feb1b79a099a91306aafcaa431863b0527f90341b61374059460ceb"></a>Oct&#160;</td><td class="fielddoc"><p>8進数 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="acb34f32140845e12845868200b548b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb34f32140845e12845868200b548b80">&#9670;&nbsp;</a></span>ConvertUtf8toWstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void basecross::Util::ConvertUtf8toWstring </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wstring &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>マルチバイトUTF8文字からワイド文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>変換する文字列（マルチバイトUTF8） </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>変換後文字列（ワイドキャラ） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a6f4a79ba7e044c2ad3f227c6d38fc954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4a79ba7e044c2ad3f227c6d38fc954">&#9670;&nbsp;</a></span>ConvertWstringtoUtf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void basecross::Util::ConvertWstringtoUtf8 </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ワイド文字列からマルチバイトUTF8文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>変換する文字列（ワイドキャラ） </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>変換後の文字列（マルチバイト） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ad580699e1012c7355fd92ee9aa8e75a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad580699e1012c7355fd92ee9aa8e75a9">&#9670;&nbsp;</a></span>DemandCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TCreateFunc &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T* basecross::Util::DemandCreate </td>
+          <td>(</td>
+          <td class="paramtype">ComPtr&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>comPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::mutex &amp;&#160;</td>
+          <td class="paramname"><em>mutex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TCreateFunc&#160;</td>
+          <td class="paramname"><em>createFunc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>安全にCOMインターフェイスのポインタを取得するヘルパー関数. </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>取得する型 </td></tr>
+    <tr><td class="paramname">TCreateFunc</td><td>作成関数の型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">comPtr</td><td>COMポインタ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>ミューテックス </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">createFunc</td><td>作成関数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>COMが無効の場合は新しく作成して、それ以外はCOMから得たCOMインターフェイスのポインタ </dd></dl>
+
+</div>
+</div>
+<a id="a5a203e3fa5cfa89395e58bdd9ff8bd53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a203e3fa5cfa89395e58bdd9ff8bd53">&#9670;&nbsp;</a></span>DivProbability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool basecross::Util::DivProbability </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>Probability</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Probability分の1の確率で、trueを返す<br />
+ Probabilityは0より大きくなければならない（0除算はできない） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Probability</td><td>確率。何分の1かを指定する </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>Probability分の1の確率になればtrue </dd></dl>
+
+</div>
+</div>
+<a id="a01304561312b7d064d02d05a1e056454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01304561312b7d064d02d05a1e056454">&#9670;&nbsp;</a></span>FloatToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string basecross::Util::FloatToStr </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">streamsize&#160;</td>
+          <td class="paramname"><em>Precision</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41">FloatModify</a>&#160;</td>
+          <td class="paramname"><em>Modify</em> = <code><a class="el" href="namespacebasecross.html#a93ff14551a943405192929376ea937cca7a1920d61156abc05a60135aefe8bc67">FloatModify::Default</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>浮動小数点を文字列に変換する（string版） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Val</td><td>浮動小数点値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Precision</td><td>= 0 精度0でデフォルト </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Modify</td><td>= <a class="el" href="namespacebasecross.html#a93ff14551a943405192929376ea937cca7a1920d61156abc05a60135aefe8bc67">FloatModify::Default</a> 表示形式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>変換した文字列 </dd></dl>
+
+</div>
+</div>
+<a id="a06b2bad785a55eb6db010941ee935ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b2bad785a55eb6db010941ee935ce3">&#9670;&nbsp;</a></span>FloatToWStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static wstring basecross::Util::FloatToWStr </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">streamsize&#160;</td>
+          <td class="paramname"><em>Precision</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_util.html#a5304e5ec03c30071539535fd75268d41">FloatModify</a>&#160;</td>
+          <td class="paramname"><em>Modify</em> = <code><a class="el" href="namespacebasecross.html#a93ff14551a943405192929376ea937cca7a1920d61156abc05a60135aefe8bc67">FloatModify::Default</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>浮動小数点を文字列に変換する（wstring版） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Val</td><td>浮動小数点値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Precision</td><td>= 0 精度0でデフォルト </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Modify</td><td>= <a class="el" href="namespacebasecross.html#a93ff14551a943405192929376ea937cca7a1920d61156abc05a60135aefe8bc67">FloatModify::Default</a> 表示形式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>変換した文字列 </dd></dl>
+
+</div>
+</div>
+<a id="adce45bd319c4df5cfae7e00ff3c8d9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce45bd319c4df5cfae7e00ff3c8d9f0">&#9670;&nbsp;</a></span>GetComPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T* basecross::Util::GetComPtr </td>
+          <td>(</td>
+          <td class="paramtype">ComPtr&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>comPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>安全にCOMインターフェイスのポインタを取得するヘルパー関数.<br />
+ 無効の場合は例外を出す </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>取得する型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comPtr</td><td>COMポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>　COMが無効の場合は例外を出して、それ以外はCOMから得たCOMインターフェイスのポインタ </dd></dl>
+
+</div>
+</div>
+<a id="a691ec32e35715beb9976a098f99abf6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691ec32e35715beb9976a098f99abf6e">&#9670;&nbsp;</a></span>GetMBTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string basecross::Util::GetMBTypeName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>T型の内部機器別名を得る（string） </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>型名を得る型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>T型の内部機器別名 </dd></dl>
+
+</div>
+</div>
+<a id="a31729b05ec6f44eddc4bc68011190fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31729b05ec6f44eddc4bc68011190fda">&#9670;&nbsp;</a></span>GetWSTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static wstring basecross::Util::GetWSTypeName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>T型の内部機器別名を得る（wstring） </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>型名を得る型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>T型の内部機器別名 </dd></dl>
+
+</div>
+</div>
+<a id="addd8242ac6cd391f41fcc0708785ee8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd8242ac6cd391f41fcc0708785ee8e">&#9670;&nbsp;</a></span>IntToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string basecross::Util::IntToStr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a>&#160;</td>
+          <td class="paramname"><em>Modify</em> = <code>NumModify::Dec</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signed数値を文字列に変換する（string版） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>signed数値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Modify</td><td>= NumModify::Dec 進数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>変換した文字列 </dd></dl>
+
+</div>
+</div>
+<a id="a45f7dac8ec5aa61c228068ed7162eb98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f7dac8ec5aa61c228068ed7162eb98">&#9670;&nbsp;</a></span>IntToWStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static wstring basecross::Util::IntToWStr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a>&#160;</td>
+          <td class="paramname"><em>Modify</em> = <code>NumModify::Dec</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signed数値を文字列に変換する（wstring版） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>signed数値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Modify</td><td>= NumModify::Dec 進数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>変換した文字列 </dd></dl>
+
+</div>
+</div>
+<a id="a3e81360f242d8fb6bae1b7eb36ae6d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e81360f242d8fb6bae1b7eb36ae6d05">&#9670;&nbsp;</a></span>Maximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T basecross::Util::Maximum </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>大きい方を求める. </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>比較する型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>T型の値1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v2</td><td>T型の値2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>T型の大きい方 </dd></dl>
+
+</div>
+</div>
+<a id="a7da8e1c2772e146cc26c93deff32022b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da8e1c2772e146cc26c93deff32022b">&#9670;&nbsp;</a></span>MBtoWS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void basecross::Util::MBtoWS </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wstring &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>マルチバイト文字列からワイド文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>変換する文字列（マルチバイト） </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>変換後の文字列（ワイドキャラ） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ad24a3e04f9111f6e39a48fec33441e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24a3e04f9111f6e39a48fec33441e06">&#9670;&nbsp;</a></span>Minimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T basecross::Util::Minimum </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>小さい方を求める. </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>比較する型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>T型の値1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v2</td><td>T型の値2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>T型の小さい方 </dd></dl>
+
+</div>
+</div>
+<a id="a64ba95cbe3beae6982bd6d9cc209c620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ba95cbe3beae6982bd6d9cc209c620">&#9670;&nbsp;</a></span>RandZeroToOne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float basecross::Util::RandZeroToOne </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ZeroOK</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>0から1.0fの間の乱数を返す<br />
+ ZeroOKがfalseの場合、0が返る可能性はない（0.00001fになる） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ZeroOK</td><td>= false 0が返っていいかどうかの指定 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>0から1.0fの間の乱数 </dd></dl>
+
+</div>
+</div>
+<a id="a6b6ca073c82db2e018c7c26fea7e5fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6ca073c82db2e018c7c26fea7e5fcc">&#9670;&nbsp;</a></span>UintToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string basecross::Util::UintToStr </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a>&#160;</td>
+          <td class="paramname"><em>Modify</em> = <code>NumModify::Dec</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>unsigned数値を文字列に変換する（string版） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>unsigned数値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Modify</td><td>= NumModify::Dec 進数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>変換した文字列 </dd></dl>
+
+</div>
+</div>
+<a id="a512a6fde34952792edb9c4977e52ddac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512a6fde34952792edb9c4977e52ddac">&#9670;&nbsp;</a></span>UintToWStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static wstring basecross::Util::UintToWStr </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_util.html#a1b80abf6e7feb1b79a099a91306aafca">NumModify</a>&#160;</td>
+          <td class="paramname"><em>Modify</em> = <code>NumModify::Dec</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>unsigned数値を文字列に変換する（wstring版） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>unsigned数値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Modify</td><td>= NumModify::Dec 進数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>変換した文字列 </dd></dl>
+
+</div>
+</div>
+<a id="a0526a7e9139fdcca96120b90381a8ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0526a7e9139fdcca96120b90381a8ff1">&#9670;&nbsp;</a></span>WStoMB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void basecross::Util::WStoMB </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ワイド文字列からマルチバイト文字列変換<br />
+ ロケール依存のため、WinMain()等で、setlocale( LC_ALL, "JPN" );が必要 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>変換する文字列（ワイドキャラ） </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>変換後の文字列（マルチバイト） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a9e5671e0938ea75f9a075a2123ae3f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5671e0938ea75f9a075a2123ae3f3e">&#9670;&nbsp;</a></span>WStrToTokenVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void basecross::Util::WStrToTokenVector </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; wstring &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wstrvec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wchar_t&#160;</td>
+          <td class="paramname"><em>delimiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>文字列をデリミタ文字により区切って配列に保存 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">wstrvec</td><td>保存される配列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>元となる文字列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delimiter</td><td>デリミタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="adfe4db25860e2e6316237b8742e235e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe4db25860e2e6316237b8742e235e2">&#9670;&nbsp;</a></span>WStrTrim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void basecross::Util::WStrTrim </td>
+          <td>(</td>
+          <td class="paramtype">wstring &amp;&#160;</td>
+          <td class="paramname"><em>wstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>TrimCharList</em> = <code>L&quot;&#160;\t\v\r\n&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>両端から空白を取り除く<br />
+ 元になる文字列から取り除く </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">wstr</td><td>もとになる文字列（リターンにも使用される） </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">trimCharacterList</td><td>= L" \t\v\r\n" 取り除く文字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>　なし </dd></dl>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

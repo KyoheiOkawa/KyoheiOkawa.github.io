@@ -1,0 +1,833 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::PlaneEX 名前空間</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="namespacebasecross_1_1_plane_e_x.html">PlaneEX</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::PlaneEX 名前空間</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>PlaneEX（平面）ネームスペース  
+<a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a243bb771b900367b5ca7c336c934d51c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a243bb771b900367b5ca7c336c934d51c">Dot</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_vector4.html">Vector4</a> &amp;other)</td></tr>
+<tr class="memdesc:a243bb771b900367b5ca7c336c934d51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeとVector4の内積を返す。平面と同次座標の関係を判定するときに役立つ。<br />
+ たとえば、この関数を使用してある座標が特定の平面上に存在するか、<br />
+ または座標が平面のどちら側に存在するかなどを判定できる。  <a href="#a243bb771b900367b5ca7c336c934d51c">[詳解]</a><br /></td></tr>
+<tr class="separator:a243bb771b900367b5ca7c336c934d51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5835f55a4367355b38d22319f42e5d6c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a5835f55a4367355b38d22319f42e5d6c">DotCoord</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;other)</td></tr>
+<tr class="memdesc:a5835f55a4367355b38d22319f42e5d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeとVector3の内積を計算し返す<br />
+ あるポイントから平面までの符号付き距離を求めるのに便利である  <a href="#a5835f55a4367355b38d22319f42e5d6c">[詳解]</a><br /></td></tr>
+<tr class="separator:a5835f55a4367355b38d22319f42e5d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1bbd9b283ef2fb7eca4b378c66cfc77"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#aa1bbd9b283ef2fb7eca4b378c66cfc77">DotNormal</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;other)</td></tr>
+<tr class="memdesc:aa1bbd9b283ef2fb7eca4b378c66cfc77"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeの法線ベクトルと 3D ベクトルの間の内積を計算し返す<br />
+ 平面の法線ベクトルと別の法線ベクトルとの角度を算出するときに役立つ  <a href="#aa1bbd9b283ef2fb7eca4b378c66cfc77">[詳解]</a><br /></td></tr>
+<tr class="separator:aa1bbd9b283ef2fb7eca4b378c66cfc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3151c511df6ae96469c2fe5f31904b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#af3151c511df6ae96469c2fe5f31904b4">Equal</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;other)</td></tr>
+<tr class="memdesc:af3151c511df6ae96469c2fe5f31904b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeと相手の平面が同じかどうかを調べる  <a href="#af3151c511df6ae96469c2fe5f31904b4">[詳解]</a><br /></td></tr>
+<tr class="separator:af3151c511df6ae96469c2fe5f31904b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeeb140436f0f08254901fca7b0745ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbasecross_1_1_plane.html">Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#aeeeb140436f0f08254901fca7b0745ec">FromPointNormal</a> (const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;Point, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;Normal)</td></tr>
+<tr class="memdesc:aeeeb140436f0f08254901fca7b0745ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">点と法線から平面を作成して、返す  <a href="#aeeeb140436f0f08254901fca7b0745ec">[詳解]</a><br /></td></tr>
+<tr class="separator:aeeeb140436f0f08254901fca7b0745ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7688ac2834ad8441df64b9a406a23386"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbasecross_1_1_plane.html">Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a7688ac2834ad8441df64b9a406a23386">FromPoints</a> (const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;Point1, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;Point2, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;Point3)</td></tr>
+<tr class="memdesc:a7688ac2834ad8441df64b9a406a23386"><td class="mdescLeft">&#160;</td><td class="mdescRight">３点から平面を作成して、返す  <a href="#a7688ac2834ad8441df64b9a406a23386">[詳解]</a><br /></td></tr>
+<tr class="separator:a7688ac2834ad8441df64b9a406a23386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a715e904c8dc7643b47e147f0a5499"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbasecross_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#aa9a715e904c8dc7643b47e147f0a5499">IntersectLine</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;LinePoint1, const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;LinePoint2)</td></tr>
+<tr class="memdesc:aa9a715e904c8dc7643b47e147f0a5499"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeと２つの頂点が作成する直線の交差する頂点を返す<br />
+ 平面と直線が平行の場合は、戻る各値はQNaN（非数） になるので、<br />
+ <a class="el" href="structbasecross_1_1_vector3.html#a2432af0a43bd3b7a46a18bdb56fab7b1" title="thisの値のいずれかが非数（無効値）かどうかを検証する。 ">Vector3::IsNaN()</a>などでチェックする  <a href="#aa9a715e904c8dc7643b47e147f0a5499">[詳解]</a><br /></td></tr>
+<tr class="separator:aa9a715e904c8dc7643b47e147f0a5499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b02f5295f232aa1aad86a61d2bc0510"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a2b02f5295f232aa1aad86a61d2bc0510">IntersectPlane</a> (<a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;RetLinePoint1, <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;RetLinePoint2, const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;other)</td></tr>
+<tr class="memdesc:a2b02f5295f232aa1aad86a61d2bc0510"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeともう一つの面が交差する2つの頂点を計算する<br />
+ RetLinePoint1とRetLinePoint2に交差する頂点を返す<br />
+ 2つの平面が平行の場合は、戻る各値はQNaN（非数） になるので、<br />
+ <a class="el" href="structbasecross_1_1_vector3.html#a2432af0a43bd3b7a46a18bdb56fab7b1" title="thisの値のいずれかが非数（無効値）かどうかを検証する。 ">Vector3::IsNaN()</a>などでチェックする  <a href="#a2b02f5295f232aa1aad86a61d2bc0510">[詳解]</a><br /></td></tr>
+<tr class="separator:a2b02f5295f232aa1aad86a61d2bc0510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a3cfff75ae0ff9c4a386ef58f46eaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a78a3cfff75ae0ff9c4a386ef58f46eaf">IsInfinite</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane)</td></tr>
+<tr class="memdesc:a78a3cfff75ae0ff9c4a386ef58f46eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeの要素のいずれかが正または負の無限大かどうかを調べる  <a href="#a78a3cfff75ae0ff9c4a386ef58f46eaf">[詳解]</a><br /></td></tr>
+<tr class="separator:a78a3cfff75ae0ff9c4a386ef58f46eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214cec8b67cb949dea6795ca6e9139c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a214cec8b67cb949dea6795ca6e9139c2">IsNaN</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane)</td></tr>
+<tr class="memdesc:a214cec8b67cb949dea6795ca6e9139c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Planeの要素のいずれかが NaNかどうかを調べる  <a href="#a214cec8b67cb949dea6795ca6e9139c2">[詳解]</a><br /></td></tr>
+<tr class="separator:a214cec8b67cb949dea6795ca6e9139c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd5af2279697f5a5a92aefa01cfb761"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#aecd5af2279697f5a5a92aefa01cfb761">NearEqual</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;other, const <a class="el" href="structbasecross_1_1_vector4.html">Vector4</a> &amp;Epsilon)</td></tr>
+<tr class="memdesc:aecd5af2279697f5a5a92aefa01cfb761"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeともう一つの平面がほぼ等しいかどうか調べる  <a href="#aecd5af2279697f5a5a92aefa01cfb761">[詳解]</a><br /></td></tr>
+<tr class="separator:aecd5af2279697f5a5a92aefa01cfb761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341527b56590f59ed7eb17fa94e6a297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbasecross_1_1_plane.html">Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a341527b56590f59ed7eb17fa94e6a297">Normalize</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane)</td></tr>
+<tr class="memdesc:a341527b56590f59ed7eb17fa94e6a297"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeを正規化する  <a href="#a341527b56590f59ed7eb17fa94e6a297">[詳解]</a><br /></td></tr>
+<tr class="separator:a341527b56590f59ed7eb17fa94e6a297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4da3f01eb7a662068d7c42961d12442"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbasecross_1_1_plane.html">Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#ae4da3f01eb7a662068d7c42961d12442">NormalizeEst</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane)</td></tr>
+<tr class="memdesc:ae4da3f01eb7a662068d7c42961d12442"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeをx,y,zの係数が単位の法線ベクトルを形成するように、平面の係数を予測  <a href="#ae4da3f01eb7a662068d7c42961d12442">[詳解]</a><br /></td></tr>
+<tr class="separator:ae4da3f01eb7a662068d7c42961d12442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a80518829534e7c6160e8b6c2144d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a53a80518829534e7c6160e8b6c2144d3">NotEqual</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;other)</td></tr>
+<tr class="memdesc:a53a80518829534e7c6160e8b6c2144d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeと相手の平面が等しくないかどうかを調べる  <a href="#a53a80518829534e7c6160e8b6c2144d3">[詳解]</a><br /></td></tr>
+<tr class="separator:a53a80518829534e7c6160e8b6c2144d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbf126b5f88b9b72caf6f11680d56d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbasecross_1_1_plane.html">Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebasecross_1_1_plane_e_x.html#a4dbf126b5f88b9b72caf6f11680d56d3">Transform</a> (const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;plane, const XMMATRIX &amp;m)</td></tr>
+<tr class="memdesc:a4dbf126b5f88b9b72caf6f11680d56d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">planeをmでトランスフォームする  <a href="#a4dbf126b5f88b9b72caf6f11680d56d3">[詳解]</a><br /></td></tr>
+<tr class="separator:a4dbf126b5f88b9b72caf6f11680d56d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>PlaneEX（平面）ネームスペース </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a243bb771b900367b5ca7c336c934d51c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243bb771b900367b5ca7c336c934d51c">&#9670;&nbsp;</a></span>Dot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float basecross::PlaneEX::Dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector4.html">Vector4</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeとVector4の内積を返す。平面と同次座標の関係を判定するときに役立つ。<br />
+ たとえば、この関数を使用してある座標が特定の平面上に存在するか、<br />
+ または座標が平面のどちら側に存在するかなどを判定できる。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>計算するVector4 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>内積 </dd></dl>
+
+</div>
+</div>
+<a id="a5835f55a4367355b38d22319f42e5d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5835f55a4367355b38d22319f42e5d6c">&#9670;&nbsp;</a></span>DotCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float basecross::PlaneEX::DotCoord </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeとVector3の内積を計算し返す<br />
+ あるポイントから平面までの符号付き距離を求めるのに便利である </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>計算するVector3 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>内積 </dd></dl>
+
+</div>
+</div>
+<a id="aa1bbd9b283ef2fb7eca4b378c66cfc77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1bbd9b283ef2fb7eca4b378c66cfc77">&#9670;&nbsp;</a></span>DotNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float basecross::PlaneEX::DotNormal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeの法線ベクトルと 3D ベクトルの間の内積を計算し返す<br />
+ 平面の法線ベクトルと別の法線ベクトルとの角度を算出するときに役立つ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>計算するVector3 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>内積 </dd></dl>
+
+</div>
+</div>
+<a id="af3151c511df6ae96469c2fe5f31904b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3151c511df6ae96469c2fe5f31904b4">&#9670;&nbsp;</a></span>Equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basecross::PlaneEX::Equal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeと相手の平面が同じかどうかを調べる </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>相手のPlane </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>同じならtrue </dd></dl>
+
+</div>
+</div>
+<a id="aeeeb140436f0f08254901fca7b0745ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeeb140436f0f08254901fca7b0745ec">&#9670;&nbsp;</a></span>FromPointNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbasecross_1_1_plane.html">Plane</a> basecross::PlaneEX::FromPointNormal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>点と法線から平面を作成して、返す </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Point</td><td>平面上の点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Normal</td><td>法線 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>作成したPlane </dd></dl>
+
+</div>
+</div>
+<a id="a7688ac2834ad8441df64b9a406a23386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7688ac2834ad8441df64b9a406a23386">&#9670;&nbsp;</a></span>FromPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbasecross_1_1_plane.html">Plane</a> basecross::PlaneEX::FromPoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Point1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Point2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Point3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>３点から平面を作成して、返す </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Point1</td><td>頂点1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Point2</td><td>頂点2 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Point3</td><td>頂点3 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>作成したPlane </dd></dl>
+
+</div>
+</div>
+<a id="aa9a715e904c8dc7643b47e147f0a5499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a715e904c8dc7643b47e147f0a5499">&#9670;&nbsp;</a></span>IntersectLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> basecross::PlaneEX::IntersectLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>LinePoint1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>LinePoint2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeと２つの頂点が作成する直線の交差する頂点を返す<br />
+ 平面と直線が平行の場合は、戻る各値はQNaN（非数） になるので、<br />
+ <a class="el" href="structbasecross_1_1_vector3.html#a2432af0a43bd3b7a46a18bdb56fab7b1" title="thisの値のいずれかが非数（無効値）かどうかを検証する。 ">Vector3::IsNaN()</a>などでチェックする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">LinePoint1</td><td>頂点1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">LinePoint2</td><td>頂点2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>planeと交差する３Ｄベクトル </dd></dl>
+
+</div>
+</div>
+<a id="a2b02f5295f232aa1aad86a61d2bc0510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b02f5295f232aa1aad86a61d2bc0510">&#9670;&nbsp;</a></span>IntersectPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::PlaneEX::IntersectPlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>RetLinePoint1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbasecross_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>RetLinePoint2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeともう一つの面が交差する2つの頂点を計算する<br />
+ RetLinePoint1とRetLinePoint2に交差する頂点を返す<br />
+ 2つの平面が平行の場合は、戻る各値はQNaN（非数） になるので、<br />
+ <a class="el" href="structbasecross_1_1_vector3.html#a2432af0a43bd3b7a46a18bdb56fab7b1" title="thisの値のいずれかが非数（無効値）かどうかを検証する。 ">Vector3::IsNaN()</a>などでチェックする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">RetLinePoint1</td><td>返される頂点1 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">RetLinePoint2</td><td>返される頂点2 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>planeと比べられるもう一つの面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a78a3cfff75ae0ff9c4a386ef58f46eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a3cfff75ae0ff9c4a386ef58f46eaf">&#9670;&nbsp;</a></span>IsInfinite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basecross::PlaneEX::IsInfinite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeの要素のいずれかが正または負の無限大かどうかを調べる </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>正または負の無限大ならtrue </dd></dl>
+
+</div>
+</div>
+<a id="a214cec8b67cb949dea6795ca6e9139c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214cec8b67cb949dea6795ca6e9139c2">&#9670;&nbsp;</a></span>IsNaN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basecross::PlaneEX::IsNaN </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Planeの要素のいずれかが NaNかどうかを調べる </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>NaNならtrue </dd></dl>
+
+</div>
+</div>
+<a id="aecd5af2279697f5a5a92aefa01cfb761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd5af2279697f5a5a92aefa01cfb761">&#9670;&nbsp;</a></span>NearEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basecross::PlaneEX::NearEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_vector4.html">Vector4</a> &amp;&#160;</td>
+          <td class="paramname"><em>Epsilon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeともう一つの平面がほぼ等しいかどうか調べる </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>planeと比べられるもう一つの面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Epsilon</td><td>各要素の許容範囲 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>ほぼ等しければtrue </dd></dl>
+
+</div>
+</div>
+<a id="a341527b56590f59ed7eb17fa94e6a297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341527b56590f59ed7eb17fa94e6a297">&#9670;&nbsp;</a></span>Normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbasecross_1_1_plane.html">Plane</a> basecross::PlaneEX::Normalize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeを正規化する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>正規化した平面 </dd></dl>
+
+</div>
+</div>
+<a id="ae4da3f01eb7a662068d7c42961d12442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4da3f01eb7a662068d7c42961d12442">&#9670;&nbsp;</a></span>NormalizeEst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbasecross_1_1_plane.html">Plane</a> basecross::PlaneEX::NormalizeEst </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeをx,y,zの係数が単位の法線ベクトルを形成するように、平面の係数を予測 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>予測した平面 </dd></dl>
+
+</div>
+</div>
+<a id="a53a80518829534e7c6160e8b6c2144d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a80518829534e7c6160e8b6c2144d3">&#9670;&nbsp;</a></span>NotEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basecross::PlaneEX::NotEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeと相手の平面が等しくないかどうかを調べる </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>相手の平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>等しくないならtrue </dd></dl>
+
+</div>
+</div>
+<a id="a4dbf126b5f88b9b72caf6f11680d56d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbf126b5f88b9b72caf6f11680d56d3">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbasecross_1_1_plane.html">Plane</a> basecross::PlaneEX::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbasecross_1_1_plane.html">Plane</a> &amp;&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const XMMATRIX &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>planeをmでトランスフォームする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>計算元の平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>トランスフォームする行列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>トランスフォームした平面 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

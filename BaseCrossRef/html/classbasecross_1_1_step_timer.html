@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::StepTimer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_step_timer.html">StepTimer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classbasecross_1_1_step_timer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::StepTimer クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ステップタイマー  
+ <a href="classbasecross_1_1_step_timer.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1a6882c2b74a25d748673474be93c571"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a1a6882c2b74a25d748673474be93c571">StepTimer</a> ()</td></tr>
+<tr class="memdesc:a1a6882c2b74a25d748673474be93c571"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a1a6882c2b74a25d748673474be93c571">[詳解]</a><br /></td></tr>
+<tr class="separator:a1a6882c2b74a25d748673474be93c571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0739c3bfed3bfd73f4e70a01860c37c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a0739c3bfed3bfd73f4e70a01860c37c1">GetElapsedTicks</a> () const</td></tr>
+<tr class="memdesc:a0739c3bfed3bfd73f4e70a01860c37c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">前の Update 呼び出しから経過したカウンタを取得.  <a href="#a0739c3bfed3bfd73f4e70a01860c37c1">[詳解]</a><br /></td></tr>
+<tr class="separator:a0739c3bfed3bfd73f4e70a01860c37c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d1b3bd7a5b33b378c952dbd962c418"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#af9d1b3bd7a5b33b378c952dbd962c418">GetElapsedSeconds</a> () const</td></tr>
+<tr class="memdesc:af9d1b3bd7a5b33b378c952dbd962c418"><td class="mdescLeft">&#160;</td><td class="mdescRight">前の Update 呼び出しから経過した時間を取得.  <a href="#af9d1b3bd7a5b33b378c952dbd962c418">[詳解]</a><br /></td></tr>
+<tr class="separator:af9d1b3bd7a5b33b378c952dbd962c418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c8cd9e2fb5c835635871be4f3d5033"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#af0c8cd9e2fb5c835635871be4f3d5033">GetTotalTicks</a> () const</td></tr>
+<tr class="memdesc:af0c8cd9e2fb5c835635871be4f3d5033"><td class="mdescLeft">&#160;</td><td class="mdescRight">プログラム開始から経過した合計カウンタを取得.  <a href="#af0c8cd9e2fb5c835635871be4f3d5033">[詳解]</a><br /></td></tr>
+<tr class="separator:af0c8cd9e2fb5c835635871be4f3d5033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2648df5b0bff492a99443355ad2e0d34"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a2648df5b0bff492a99443355ad2e0d34">GetTotalSeconds</a> () const</td></tr>
+<tr class="memdesc:a2648df5b0bff492a99443355ad2e0d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">プログラム開始から経過した合計時間を取得.  <a href="#a2648df5b0bff492a99443355ad2e0d34">[詳解]</a><br /></td></tr>
+<tr class="separator:a2648df5b0bff492a99443355ad2e0d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9e5e821956686b01cd9984e9e955c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebasecross.html#a48ae476130479eee7b59be2741e5cbb2">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a9f9e5e821956686b01cd9984e9e955c7">GetFrameCount</a> () const</td></tr>
+<tr class="memdesc:a9f9e5e821956686b01cd9984e9e955c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">プログラム開始からの合計更新回数を取得.  <a href="#a9f9e5e821956686b01cd9984e9e955c7">[詳解]</a><br /></td></tr>
+<tr class="separator:a9f9e5e821956686b01cd9984e9e955c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8060321357977eda9c542a39720e6bb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebasecross.html#a48ae476130479eee7b59be2741e5cbb2">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a8060321357977eda9c542a39720e6bb9">GetFramesPerSecond</a> () const</td></tr>
+<tr class="memdesc:a8060321357977eda9c542a39720e6bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のフレーム レートを取得.  <a href="#a8060321357977eda9c542a39720e6bb9">[詳解]</a><br /></td></tr>
+<tr class="separator:a8060321357977eda9c542a39720e6bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ec24b95c489e4ac4f75b725fd50891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a86ec24b95c489e4ac4f75b725fd50891">SetFixedTimeStep</a> (bool isFixedTimestep)</td></tr>
+<tr class="memdesc:a86ec24b95c489e4ac4f75b725fd50891"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定または可変のどちらのタイムステップ モードを使用するかを設定（デフォルトは可変）.  <a href="#a86ec24b95c489e4ac4f75b725fd50891">[詳解]</a><br /></td></tr>
+<tr class="separator:a86ec24b95c489e4ac4f75b725fd50891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9eb535c5912f73462a26a349b6c7b0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#ad9eb535c5912f73462a26a349b6c7b0d">SetTargetElapsedTicks</a> (<a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a> targetElapsed)</td></tr>
+<tr class="memdesc:ad9eb535c5912f73462a26a349b6c7b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定タイムステップ モードで、Update の呼び出し頻度を設定.  <a href="#ad9eb535c5912f73462a26a349b6c7b0d">[詳解]</a><br /></td></tr>
+<tr class="separator:ad9eb535c5912f73462a26a349b6c7b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d81887f094c7c05afcfdea74d6c5d2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a1d81887f094c7c05afcfdea74d6c5d2d">SetTargetElapsedSeconds</a> (double targetElapsed)</td></tr>
+<tr class="memdesc:a1d81887f094c7c05afcfdea74d6c5d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定タイムステップ モードで、Update の呼び出し頻度を設定.  <a href="#a1d81887f094c7c05afcfdea74d6c5d2d">[詳解]</a><br /></td></tr>
+<tr class="separator:a1d81887f094c7c05afcfdea74d6c5d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40e9bde98a9b3e45da5618df3bd7b44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#ab40e9bde98a9b3e45da5618df3bd7b44">ResetElapsedTime</a> ()</td></tr>
+<tr class="memdesc:ab40e9bde98a9b3e45da5618df3bd7b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">呼び出しの更新<br />
+ 意図的なタイミングの不連続性の後 (ブロック IO 操作など)<br />
+ これを呼び出すと、固定タイムステップ ロジックによって一連のキャッチアップが試行されるのを回避できる  <a href="#ab40e9bde98a9b3e45da5618df3bd7b44">[詳解]</a><br /></td></tr>
+<tr class="separator:ab40e9bde98a9b3e45da5618df3bd7b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05559cda511d47bd109c1e8e58b93888"><td class="memTemplParams" colspan="2">template&lt;typename TUpdate &gt; </td></tr>
+<tr class="memitem:a05559cda511d47bd109c1e8e58b93888"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a05559cda511d47bd109c1e8e58b93888">Tick</a> (const TUpdate &amp;update)</td></tr>
+<tr class="memdesc:a05559cda511d47bd109c1e8e58b93888"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイマー状態を更新し、指定の Update 関数を適切な回数だけ呼び出す  <a href="#a05559cda511d47bd109c1e8e58b93888">[詳解]</a><br /></td></tr>
+<tr class="separator:a05559cda511d47bd109c1e8e58b93888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aadd7e22836ce23013197bdfa15281374"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#aadd7e22836ce23013197bdfa15281374">TicksToSeconds</a> (<a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a> ticks)</td></tr>
+<tr class="memdesc:aadd7e22836ce23013197bdfa15281374"><td class="mdescLeft">&#160;</td><td class="mdescRight">チックカウンタか時間に換算.  <a href="#aadd7e22836ce23013197bdfa15281374">[詳解]</a><br /></td></tr>
+<tr class="separator:aadd7e22836ce23013197bdfa15281374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7b5023120f6cbe4dfc9ddb50681b9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a8b7b5023120f6cbe4dfc9ddb50681b9a">SecondsToTicks</a> (double seconds)</td></tr>
+<tr class="memdesc:a8b7b5023120f6cbe4dfc9ddb50681b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">時間をチックカウンタに換算.  <a href="#a8b7b5023120f6cbe4dfc9ddb50681b9a">[詳解]</a><br /></td></tr>
+<tr class="separator:a8b7b5023120f6cbe4dfc9ddb50681b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a9642b170869bb2c1659b2b55dc4ec377"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_step_timer.html#a9642b170869bb2c1659b2b55dc4ec377">TicksPerSecond</a> = 10000000</td></tr>
+<tr class="separator:a9642b170869bb2c1659b2b55dc4ec377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ステップタイマー </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a1a6882c2b74a25d748673474be93c571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6882c2b74a25d748673474be93c571">&#9670;&nbsp;</a></span>StepTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::StepTimer::StepTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af9d1b3bd7a5b33b378c952dbd962c418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d1b3bd7a5b33b378c952dbd962c418">&#9670;&nbsp;</a></span>GetElapsedSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double basecross::StepTimer::GetElapsedSeconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前の Update 呼び出しから経過した時間を取得. </p>
+<dl class="section return"><dt>戻り値</dt><dd>経過時間 </dd></dl>
+
+</div>
+</div>
+<a id="a0739c3bfed3bfd73f4e70a01860c37c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0739c3bfed3bfd73f4e70a01860c37c1">&#9670;&nbsp;</a></span>GetElapsedTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a> basecross::StepTimer::GetElapsedTicks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前の Update 呼び出しから経過したカウンタを取得. </p>
+<dl class="section return"><dt>戻り値</dt><dd>経過カウンタ </dd></dl>
+
+</div>
+</div>
+<a id="a9f9e5e821956686b01cd9984e9e955c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9e5e821956686b01cd9984e9e955c7">&#9670;&nbsp;</a></span>GetFrameCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacebasecross.html#a48ae476130479eee7b59be2741e5cbb2">uint32</a> basecross::StepTimer::GetFrameCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プログラム開始からの合計更新回数を取得. </p>
+<dl class="section return"><dt>戻り値</dt><dd>合計更新回数 </dd></dl>
+
+</div>
+</div>
+<a id="a8060321357977eda9c542a39720e6bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8060321357977eda9c542a39720e6bb9">&#9670;&nbsp;</a></span>GetFramesPerSecond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacebasecross.html#a48ae476130479eee7b59be2741e5cbb2">uint32</a> basecross::StepTimer::GetFramesPerSecond </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のフレーム レートを取得. </p>
+<dl class="section return"><dt>戻り値</dt><dd>現在のフレーム レート </dd></dl>
+
+</div>
+</div>
+<a id="a2648df5b0bff492a99443355ad2e0d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2648df5b0bff492a99443355ad2e0d34">&#9670;&nbsp;</a></span>GetTotalSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double basecross::StepTimer::GetTotalSeconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プログラム開始から経過した合計時間を取得. </p>
+<dl class="section return"><dt>戻り値</dt><dd>合計時間 </dd></dl>
+
+</div>
+</div>
+<a id="af0c8cd9e2fb5c835635871be4f3d5033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c8cd9e2fb5c835635871be4f3d5033">&#9670;&nbsp;</a></span>GetTotalTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a> basecross::StepTimer::GetTotalTicks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プログラム開始から経過した合計カウンタを取得. </p>
+<dl class="section return"><dt>戻り値</dt><dd>合計カウンタ </dd></dl>
+
+</div>
+</div>
+<a id="ab40e9bde98a9b3e45da5618df3bd7b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40e9bde98a9b3e45da5618df3bd7b44">&#9670;&nbsp;</a></span>ResetElapsedTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::StepTimer::ResetElapsedTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>呼び出しの更新<br />
+ 意図的なタイミングの不連続性の後 (ブロック IO 操作など)<br />
+ これを呼び出すと、固定タイムステップ ロジックによって一連のキャッチアップが試行されるのを回避できる </p>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a8b7b5023120f6cbe4dfc9ddb50681b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7b5023120f6cbe4dfc9ddb50681b9a">&#9670;&nbsp;</a></span>SecondsToTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a> basecross::StepTimer::SecondsToTicks </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>seconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>時間をチックカウンタに換算. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seconds</td><td>時間 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>換算されたチックカウンタ </dd></dl>
+
+</div>
+</div>
+<a id="a86ec24b95c489e4ac4f75b725fd50891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ec24b95c489e4ac4f75b725fd50891">&#9670;&nbsp;</a></span>SetFixedTimeStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::StepTimer::SetFixedTimeStep </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isFixedTimestep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>固定または可変のどちらのタイムステップ モードを使用するかを設定（デフォルトは可変）. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">isFixedTimestep</td><td>固定モードにするかどうか </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a1d81887f094c7c05afcfdea74d6c5d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d81887f094c7c05afcfdea74d6c5d2d">&#9670;&nbsp;</a></span>SetTargetElapsedSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::StepTimer::SetTargetElapsedSeconds </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>targetElapsed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>固定タイムステップ モードで、Update の呼び出し頻度を設定. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetElapsed</td><td>呼び出し頻度（時間） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="ad9eb535c5912f73462a26a349b6c7b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9eb535c5912f73462a26a349b6c7b0d">&#9670;&nbsp;</a></span>SetTargetElapsedTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::StepTimer::SetTargetElapsedTicks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a>&#160;</td>
+          <td class="paramname"><em>targetElapsed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>固定タイムステップ モードで、Update の呼び出し頻度を設定. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetElapsed</td><td>呼び出し頻度（カウンタ） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a05559cda511d47bd109c1e8e58b93888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05559cda511d47bd109c1e8e58b93888">&#9670;&nbsp;</a></span>Tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TUpdate &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basecross::StepTimer::Tick </td>
+          <td>(</td>
+          <td class="paramtype">const TUpdate &amp;&#160;</td>
+          <td class="paramname"><em>update</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイマー状態を更新し、指定の Update 関数を適切な回数だけ呼び出す </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">呼び出すべきUpdate関数型</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">update</td><td>呼び出すべきUpdate関数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="aadd7e22836ce23013197bdfa15281374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd7e22836ce23013197bdfa15281374">&#9670;&nbsp;</a></span>TicksToSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double basecross::StepTimer::TicksToSeconds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a>&#160;</td>
+          <td class="paramname"><em>ticks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>チックカウンタか時間に換算. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ticks</td><td>チックカウンタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>換算された時間 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9642b170869bb2c1659b2b55dc4ec377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9642b170869bb2c1659b2b55dc4ec377">&#9670;&nbsp;</a></span>TicksPerSecond</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacebasecross.html#ac842928be88b99032e0151db4f732708">uint64</a> basecross::StepTimer::TicksPerSecond = 10000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

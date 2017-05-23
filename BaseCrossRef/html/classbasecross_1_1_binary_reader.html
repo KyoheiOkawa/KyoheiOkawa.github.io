@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::BinaryReader クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_binary_reader.html">BinaryReader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="classbasecross_1_1_binary_reader-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::BinaryReader クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>バイナリデータ読み込み。DirectXTKカスタマイズ  
+ <a href="classbasecross_1_1_binary_reader.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae00231b41e8d17064a05e6ab097ed4dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_binary_reader.html#ae00231b41e8d17064a05e6ab097ed4dc">BinaryReader</a> (const wstring &amp;fileName)</td></tr>
+<tr class="memdesc:ae00231b41e8d17064a05e6ab097ed4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#ae00231b41e8d17064a05e6ab097ed4dc">[詳解]</a><br /></td></tr>
+<tr class="separator:ae00231b41e8d17064a05e6ab097ed4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c7d0182276d9d5318a267a0469cc39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_binary_reader.html#a62c7d0182276d9d5318a267a0469cc39">BinaryReader</a> (_In_reads_bytes_(dataSize) uint8_t const *dataBlob, size_t dataSize)</td></tr>
+<tr class="memdesc:a62c7d0182276d9d5318a267a0469cc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ（メモリから読み込む）  <a href="#a62c7d0182276d9d5318a267a0469cc39">[詳解]</a><br /></td></tr>
+<tr class="separator:a62c7d0182276d9d5318a267a0469cc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df7cac84a0c255d372351179d3eb616"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9df7cac84a0c255d372351179d3eb616"><td class="memTemplItemLeft" align="right" valign="top">T const  &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_binary_reader.html#a9df7cac84a0c255d372351179d3eb616">Read</a> ()</td></tr>
+<tr class="memdesc:a9df7cac84a0c255d372351179d3eb616"><td class="mdescLeft">&#160;</td><td class="mdescRight">T型のデータを1つ読み込む  <a href="#a9df7cac84a0c255d372351179d3eb616">[詳解]</a><br /></td></tr>
+<tr class="separator:a9df7cac84a0c255d372351179d3eb616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4437ea8841574d861c5d1e06fd8a9a4d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4437ea8841574d861c5d1e06fd8a9a4d"><td class="memTemplItemLeft" align="right" valign="top">T const  *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_binary_reader.html#a4437ea8841574d861c5d1e06fd8a9a4d">ReadArray</a> (size_t elementCount)</td></tr>
+<tr class="memdesc:a4437ea8841574d861c5d1e06fd8a9a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">T型の配列を指定数だけ読み込む  <a href="#a4437ea8841574d861c5d1e06fd8a9a4d">[詳解]</a><br /></td></tr>
+<tr class="separator:a4437ea8841574d861c5d1e06fd8a9a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab1cb43b0bf95fbdb28b7ed4166b4849f"><td class="memItemLeft" align="right" valign="top">static HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_binary_reader.html#ab1cb43b0bf95fbdb28b7ed4166b4849f">ReadEntireFile</a> (const wstring &amp;fileName, _Inout_ std::unique_ptr&lt; uint8_t[]&gt; &amp;data, _Out_ size_t *dataSize)</td></tr>
+<tr class="memdesc:ab1cb43b0bf95fbdb28b7ed4166b4849f"><td class="mdescLeft">&#160;</td><td class="mdescRight">低レベルヘルパー（ファイルからメモリへの読み込み）  <a href="#ab1cb43b0bf95fbdb28b7ed4166b4849f">[詳解]</a><br /></td></tr>
+<tr class="separator:ab1cb43b0bf95fbdb28b7ed4166b4849f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>バイナリデータ読み込み。DirectXTKカスタマイズ </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="ae00231b41e8d17064a05e6ab097ed4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00231b41e8d17064a05e6ab097ed4dc">&#9670;&nbsp;</a></span>BinaryReader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::BinaryReader::BinaryReader </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>ファイル名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a62c7d0182276d9d5318a267a0469cc39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c7d0182276d9d5318a267a0469cc39">&#9670;&nbsp;</a></span>BinaryReader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">basecross::BinaryReader::BinaryReader </td>
+          <td>(</td>
+          <td class="paramtype">_In_reads_bytes_(dataSize) uint8_t const *&#160;</td>
+          <td class="paramname"><em>dataBlob</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ（メモリから読み込む） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataBlob</td><td>データの先頭ポインタ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataSize</td><td>サイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a9df7cac84a0c255d372351179d3eb616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df7cac84a0c255d372351179d3eb616">&#9670;&nbsp;</a></span>Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T const&amp; basecross::BinaryReader::Read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>T型のデータを1つ読み込む </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>データの型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>T型の参照 </dd></dl>
+
+</div>
+</div>
+<a id="a4437ea8841574d861c5d1e06fd8a9a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4437ea8841574d861c5d1e06fd8a9a4d">&#9670;&nbsp;</a></span>ReadArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T const* basecross::BinaryReader::ReadArray </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elementCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>T型の配列を指定数だけ読み込む </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>配列の型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">elementCount</td><td>読み込むサイズ（数） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>T型のポインタ </dd></dl>
+
+</div>
+</div>
+<a id="ab1cb43b0bf95fbdb28b7ed4166b4849f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1cb43b0bf95fbdb28b7ed4166b4849f">&#9670;&nbsp;</a></span>ReadEntireFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT basecross::BinaryReader::ReadEntireFile </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_Inout_ std::unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_Out_ size_t *&#160;</td>
+          <td class="paramname"><em>dataSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>低レベルヘルパー（ファイルからメモリへの読み込み） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>ファイル名 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>データの参照 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dataSize</td><td>読み込んだ数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>HRESULT型 </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a></li>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_base_helper_8cpp.html">BaseHelper.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

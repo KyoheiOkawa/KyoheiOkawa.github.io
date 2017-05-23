@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BaseCrossRef: basecross::StateMachine&lt; T &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BaseCrossRef
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebasecross.html">basecross</a></li><li class="navelem"><a class="el" href="classbasecross_1_1_state_machine.html">StateMachine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classbasecross_1_1_state_machine-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">basecross::StateMachine&lt; T &gt; クラステンプレート</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ステートマシン実装テンプレートクラス(抽象クラス)  
+ <a href="classbasecross_1_1_state_machine.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1a13c53da0d2ac4193344a14fd311684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#a1a13c53da0d2ac4193344a14fd311684">StateMachine</a> (const shared_ptr&lt; T &gt; &amp;owner)</td></tr>
+<tr class="memdesc:a1a13c53da0d2ac4193344a14fd311684"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a1a13c53da0d2ac4193344a14fd311684">[詳解]</a><br /></td></tr>
+<tr class="separator:a1a13c53da0d2ac4193344a14fd311684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d338b560282606c96466e6468899f9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#a67d338b560282606c96466e6468899f9">~StateMachine</a> ()</td></tr>
+<tr class="memdesc:a67d338b560282606c96466e6468899f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#a67d338b560282606c96466e6468899f9">[詳解]</a><br /></td></tr>
+<tr class="separator:a67d338b560282606c96466e6468899f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4370a9cb56fb06534f39797a6dac2fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#af4370a9cb56fb06534f39797a6dac2fd">SetCurrentState</a> (const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;s)</td></tr>
+<tr class="memdesc:af4370a9cb56fb06534f39797a6dac2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレントステートを設定する  <a href="#af4370a9cb56fb06534f39797a6dac2fd">[詳解]</a><br /></td></tr>
+<tr class="separator:af4370a9cb56fb06534f39797a6dac2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f521e8ea2025155045a533ca2dc12e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#a2f521e8ea2025155045a533ca2dc12e6">SetPreviousState</a> (const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;s)</td></tr>
+<tr class="memdesc:a2f521e8ea2025155045a533ca2dc12e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">1つ前のステートを設定する  <a href="#a2f521e8ea2025155045a533ca2dc12e6">[詳解]</a><br /></td></tr>
+<tr class="separator:a2f521e8ea2025155045a533ca2dc12e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c0ed4dda1d284d046a008f65ab663c"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#a16c0ed4dda1d284d046a008f65ab663c">GetCurrentState</a> () const</td></tr>
+<tr class="memdesc:a16c0ed4dda1d284d046a008f65ab663c"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレントステートを得る  <a href="#a16c0ed4dda1d284d046a008f65ab663c">[詳解]</a><br /></td></tr>
+<tr class="separator:a16c0ed4dda1d284d046a008f65ab663c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47fbd081307e9b7cb2eba014d385c20"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#ab47fbd081307e9b7cb2eba014d385c20">GetPreviousState</a> () const</td></tr>
+<tr class="memdesc:ab47fbd081307e9b7cb2eba014d385c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">1つ前のステートを得る  <a href="#ab47fbd081307e9b7cb2eba014d385c20">[詳解]</a><br /></td></tr>
+<tr class="separator:ab47fbd081307e9b7cb2eba014d385c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc9d7df8b01bce52ea20cde2f373cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#aebc9d7df8b01bce52ea20cde2f373cba">Update</a> () const</td></tr>
+<tr class="memdesc:aebc9d7df8b01bce52ea20cde2f373cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートを更新する  <a href="#aebc9d7df8b01bce52ea20cde2f373cba">[詳解]</a><br /></td></tr>
+<tr class="separator:aebc9d7df8b01bce52ea20cde2f373cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ae4ae59a9851b5eb1e19e9dce9af3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#a07ae4ae59a9851b5eb1e19e9dce9af3f">ChangeState</a> (const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;NewState)</td></tr>
+<tr class="memdesc:a07ae4ae59a9851b5eb1e19e9dce9af3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートを変更する  <a href="#a07ae4ae59a9851b5eb1e19e9dce9af3f">[詳解]</a><br /></td></tr>
+<tr class="separator:a07ae4ae59a9851b5eb1e19e9dce9af3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d64426e0666a03d3863b1c9e0f1c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#af7d64426e0666a03d3863b1c9e0f1c6b">RevertToPreviousState</a> ()</td></tr>
+<tr class="memdesc:af7d64426e0666a03d3863b1c9e0f1c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートを一つ前のステートに戻す  <a href="#af7d64426e0666a03d3863b1c9e0f1c6b">[詳解]</a><br /></td></tr>
+<tr class="separator:af7d64426e0666a03d3863b1c9e0f1c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724b0797db3965293930ad9f6bf1ace4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasecross_1_1_state_machine.html#a724b0797db3965293930ad9f6bf1ace4">IsInState</a> (const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;st) const</td></tr>
+<tr class="memdesc:a724b0797db3965293930ad9f6bf1ace4"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレントステートが指定したステートになってるかどうかをチェック  <a href="#a724b0797db3965293930ad9f6bf1ace4">[詳解]</a><br /></td></tr>
+<tr class="separator:a724b0797db3965293930ad9f6bf1ace4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class basecross::StateMachine&lt; T &gt;</h3>
+
+<p>ステートマシン実装テンプレートクラス(抽象クラス) </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>オーナーの型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a1a13c53da0d2ac4193344a14fd311684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a13c53da0d2ac4193344a14fd311684">&#9670;&nbsp;</a></span>StateMachine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::<a class="el" href="classbasecross_1_1_state_machine.html">StateMachine</a> </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">owner</td><td>オーナーのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a67d338b560282606c96466e6468899f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d338b560282606c96466e6468899f9">&#9670;&nbsp;</a></span>~StateMachine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::~<a class="el" href="classbasecross_1_1_state_machine.html">StateMachine</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a07ae4ae59a9851b5eb1e19e9dce9af3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ae4ae59a9851b5eb1e19e9dce9af3f">&#9670;&nbsp;</a></span>ChangeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::ChangeState </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>NewState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステートを変更する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">NewState</td><td>設定するステート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a16c0ed4dda1d284d046a008f65ab663c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c0ed4dda1d284d046a008f65ab663c">&#9670;&nbsp;</a></span>GetCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt;T&gt; &gt; <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::GetCurrentState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カレントステートを得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>カレントステート </dd></dl>
+
+</div>
+</div>
+<a id="ab47fbd081307e9b7cb2eba014d385c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47fbd081307e9b7cb2eba014d385c20">&#9670;&nbsp;</a></span>GetPreviousState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt;T&gt; &gt; <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::GetPreviousState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1つ前のステートを得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>1つ前のステート </dd></dl>
+
+</div>
+</div>
+<a id="a724b0797db3965293930ad9f6bf1ace4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a724b0797db3965293930ad9f6bf1ace4">&#9670;&nbsp;</a></span>IsInState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::IsInState </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>st</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カレントステートが指定したステートになってるかどうかをチェック </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">st</td><td>調べるステート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定したステートになってればtrue </dd></dl>
+
+</div>
+</div>
+<a id="af7d64426e0666a03d3863b1c9e0f1c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d64426e0666a03d3863b1c9e0f1c6b">&#9670;&nbsp;</a></span>RevertToPreviousState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::RevertToPreviousState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステートを一つ前のステートに戻す </p>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="af4370a9cb56fb06534f39797a6dac2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4370a9cb56fb06534f39797a6dac2fd">&#9670;&nbsp;</a></span>SetCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::SetCurrentState </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カレントステートを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>設定するステート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="a2f521e8ea2025155045a533ca2dc12e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f521e8ea2025155045a533ca2dc12e6">&#9670;&nbsp;</a></span>SetPreviousState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::SetPreviousState </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classbasecross_1_1_obj_state.html">ObjState</a>&lt; T &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1つ前のステートを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>設定するステート </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a id="aebc9d7df8b01bce52ea20cde2f373cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc9d7df8b01bce52ea20cde2f373cba">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbasecross_1_1_state_machine.html">basecross::StateMachine</a>&lt; T &gt;::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステートを更新する </p>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>D:/GitRepository/GitHub/BaseCross/Libs/BaseLib/DxLib/<a class="el" href="_base_helper_8h_source.html">BaseHelper.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
