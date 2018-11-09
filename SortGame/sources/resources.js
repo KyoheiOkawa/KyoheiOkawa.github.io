@@ -1,0 +1,38 @@
+IMAGE_PATH = "./resources/images/";
+
+LIMIT_TIME = 60;
+
+ADD_POINT = 1;
+SPECIAL_ADD_POINT = 5;
+MINUS_POINT = 3;
+
+RESPAWN_POINT = [
+	[0,208],
+	[640,208],
+	[288,0],
+	[288,480],
+	[288,208]
+];
+
+MAX_SHEEP_NUM = 16;
+MIN_SHEEP_SPEED = 1.0;
+MAX_SHEEP_SPEED = 7.0;
+//羊のスピードが最大になるスコア
+MAX_SPEED_SCORE = 300;
+MIN_SHEEP_SCALE = 1.0;
+MAX_SHEEP_SCALE = 1.5;
+
+SHEEP_IMAGE_SIZE = 64;
+FENCE_IMAGE_SIZE = 128;
+
+//ゲームが始まるまでのインターバル
+GAME_START_INTERVAL = 3.0;
+//ゲームが終わってリザルト行くまでのインターバル
+GAME_END_INTERVAL = 2.0;
+
+IMAGE_WHITESHEEP = IMAGE_PATH + "WhiteSheep.png";
+IMAGE_BLACKSHEEP = IMAGE_PATH + "BlackSheep.png";
+IMAGE_BLACKFENCE = IMAGE_PATH + "blackFence.png";
+IMAGE_WHITEFENCE = IMAGE_PATH + "whiteFence.png";
+IMAGE_BACKGROUND = IMAGE_PATH + "background.png";
+IMAGE_SPECIAL    = IMAGE_PATH + "special.png";
