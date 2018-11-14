@@ -39,22 +39,34 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         var uiGroup = new Group();
         this.addChild(uiGroup);
 
-        var scoreLabel = new Label("点数:"+this.score);
-        scoreLabel.x = (game.width / 2.0)-(scoreLabel.width / 2.0);
-        scoreLabel.y = game.height-42.0;
-        scoreLabel.color = '#FFFFFF';
-        scoreLabel.font = '32px nikumaru';
+        var scoreFrame = new Sprite(156,40);
+        scoreFrame.x = game.width-156;
+        scoreFrame.y = 135;
+        scoreFrame.image = game.assets[IMAGE_SCORE_FRAME];
+        uiGroup.addChild(scoreFrame);
+
+        var scoreLabel = new Label(this.score);
+        scoreLabel.x = scoreFrame.x-65;
+        scoreLabel.y = scoreFrame.y+10;
+        scoreLabel.color = '#000000';
+        scoreLabel.font = '20px nikumaru';
         scoreLabel.textAlign = 'center';
         uiGroup.addChild(scoreLabel);
         scoreLabel.addEventListener(enchant.Event.ENTER_FRAME,function(){
-            this.text = "点数:" + mainScene.score;
+            this.text = mainScene.score;
         });
 
-        var timeLabel = new Label("残り時間:"+this.limitTime);
-        timeLabel.x = (game.width / 2.0)-(scoreLabel.width / 2.0);
-        timeLabel.y = 16.0;
-        timeLabel.color = '#FFFFFF';
-        timeLabel.font = '32px nikumaru';
+        var timeFrame = new Sprite(156,40);
+        timeFrame.x = 0;
+        timeFrame.y = 135;
+        timeFrame.image = game.assets[IMAGE_TIME_FRAME];
+        uiGroup.addChild(timeFrame);
+
+        var timeLabel = new Label(this.limitTime);
+        timeLabel.x = -49;
+        timeLabel.y = timeFrame.y+10;
+        timeLabel.color = '#000000';
+        timeLabel.font = '20px nikumaru';
         timeLabel.textAlign = 'center';
         uiGroup.addChild(timeLabel);
         timeLabel.addEventListener(enchant.Event.ENTER_FRAME,function(){
@@ -68,32 +80,42 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 
             if(mainScene.time <= 0){
                 mainScene.gameState = "end"
-                endLabel = new Label("時間切れ！");
-                endLabel.x = (game.width / 2.0)-(startLabel.width/2.0);
-                endLabel.y = (game.height/ 2.0)-32.0;
-                endLabel.color = '#FF0000';
-                endLabel.font = 'bold 54px nikumaru';
-                endLabel.textAlign = 'center';
+                endLabel = new Sprite(320,120);
+                endLabel.image = game.assets[IMAGE_TIMEOVER];
+                endLabel.x = (game.width / 2.0)-(endLabel.width/2.0);
+                endLabel.y = (game.height/ 2.0)-(endLabel.height/2.0);
+                endLabel.scaleX = 4;
+                endLabel.scaleY = 4;
+                endLabel.opacity = 0;
+                endLabel.tl.fadeIn(10).scaleTo(1,30);
                 uiGroup.addChild(endLabel);
+
+                endLabel.isShowResultPanel = false;
 
                 endLabel.startFrame = game.frame;
                 endLabel.addEventListener(enchant.Event.ENTER_FRAME,function(){
-                    if((game.frame-this.startFrame)/game.fps > GAME_END_INTERVAL){
-                        var resultScene = new ResultScene(mainScene.score);
-                        game.replaceScene(resultScene);
+                    if((game.frame-this.startFrame)/game.fps > GAME_END_INTERVAL+0.5){
+
+                        if(!this.isShowResultPanel){
+                            mainScene.removeChild(uiGroup);
+                            this.isShowResultPanel = true;
+                            var resultPanel = new ResultPanel();
+                            mainScene.addChild(resultPanel);
+                        }
                     }
                 });
             }
 
-            this.text = "残り時間:" + mainScene.time; 
+            this.text = mainScene.time; 
         });
 
-        startLabel = new Label("よーい");
+        startLabel = new Sprite(320,120);
+        startLabel.image = game.assets[IMAGE_READY];
         startLabel.x = (game.width / 2.0)-(startLabel.width/2.0);
-        startLabel.y = (game.height/ 2.0)-48.0;
-        startLabel.color = '#FF0000';
-        startLabel.font = 'bold 96px nikumaru';
-        startLabel.textAlign = 'center';
+        startLabel.y = (game.height/ 2.0)-(startLabel.height/2.0);
+        startLabel.scaleX = 0;
+        startLabel.scaleY = 0;
+        startLabel.tl.scaleTo(1,40,enchant.Easing.QUAD_EASEIN);
         uiGroup.addChild(startLabel);
 
         sheeps = new Array();
@@ -108,29 +130,11 @@ var MainScene = enchant.Class.create(enchant.Scene,{
             sheeps.push(animal);
         }
 
-        var specialSheep = new Sheep(320,240,"Black",true);
-        var specialImage = new Sprite(64,64);
-        specialImage.image = game.assets[IMAGE_SPECIAL];
-        specialImage.addEventListener(enchant.Event.ENTER_FRAME,function(){
-            this.x = specialSheep.x;
-            this.y = specialSheep.y;
-        });
-        specialSheep.specialImage = specialImage;
-        stageObjGroup.addChild(specialSheep);
-        stageObjGroup.addChild(specialImage);
-        sheeps.push(specialSheep);
-
         var isTouch = false;
         touchedSheep = null;
         function drag(e){
             if(touchedSheep==null)
                 return;
-
-            // if(!touchedSheep.isTouched)
-            // {
-            //     this.removeTouchedSheep();
-            //     return;
-            // }
 
             //カーソルが枠外に出た時の処理（羊を離す）
             if(e.x<10||e.x>game.width-10||e.y<10||e.y>game.height-10){
@@ -157,6 +161,9 @@ var MainScene = enchant.Class.create(enchant.Scene,{
                    e.y >= sheeps[i].y && e.y <= sheeps[i].y + SHEEP_IMAGE_SIZE*sheeps[i].scaleY){
                     touchedSheep = sheeps[i];
                     touchedSheep.isTouched = true;
+
+                    var se = game.assets[SOUND_SHEEP].clone();
+                    se.play();
                     break;
                 }
             }
@@ -172,12 +179,11 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         this.addEventListener("enterframe",function(e){
             if(this.gameState=="start"){
                 var time = (game.frame-this.startFrame)/game.fps;
-                if(time > 2.5)
-                    startLabel.text = "どん";
 
                 if(time>GAME_START_INTERVAL)
                 {
-                    startLabel.visible = false;
+                    startLabel.image = game.assets[IMAGE_GO];
+                    startLabel.tl.delay(15).fadeOut(30);
                     this.startFrame = game.frame
                     this.gameState = "play";
                 }
@@ -198,7 +204,8 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         });
 	},
     removeTouchedSheep:function(){
-        this.respawn();
+        if(!touchedSheep.isSpecial)
+            this.respawn();
 
         sheeps.some(function(v,i){
         if(v==touchedSheep)
@@ -207,8 +214,8 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 
         stageObjGroup.removeChild(touchedSheep);
 
-        if(touchedSheep.isSpecial)
-            stageObjGroup.removeChild(touchedSheep.specialImage);
+        // if(touchedSheep.isSpecial)
+        //     stageObjGroup.removeChild(touchedSheep.specialImage);
 
         touchedSheep = null;
     },
@@ -224,6 +231,9 @@ var MainScene = enchant.Class.create(enchant.Scene,{
                         this.score += SPECIAL_ADD_POINT;
                     else
                         this.score += ADD_POINT;
+
+                    var pointSe = game.assets[SOUND_POINT].clone();
+                    pointSe.play();
                 }
                 else{
                     this.score -= MINUS_POINT;
@@ -240,9 +250,6 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         touchedSheep = null;
     },
     respawn:function(){
-        if(sheeps.length >= MAX_SHEEP_NUM)
-            return;
-
         var r = Math.random();
         var color;
         if(r > 0.5)
@@ -267,9 +274,6 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         sheeps.push(sheep);
     },
     spawnSpecialSheep:function(){
-        if(sheeps.length >= MAX_SHEEP_NUM)
-            return;
-
         var r = Math.random();
         var color;
         if(r > 0.5)
@@ -277,20 +281,33 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         else
             color = "White";
 
-        var sheep = new Sheep(game.width/2.0,game.height/2.0,color,true);
+        var index = Math.floor(Math.random()*(RESPAWN_POINT.length-1));
+        var pointIndex = RESPAWN_POINT[index];
+
+        var sheep = new Sheep(pointIndex[0],pointIndex[1],color,true);
+        var dirs = [
+            [1,0],
+            [-1,0],
+            [0,1],
+            [0,-1]
+        ];
+        sheep.moveDir = dirs[index];
+        if(index==0)
+            sheep.scaleX = -sheep.scaleX;
+
         sheep.speed = this.respawnSheepSpeed;
         stageObjGroup.addChild(sheep);
 
-        var specialImage = new Sprite(64,64);
-        specialImage.x = sheep.x;
-        specialImage.y = sheep.y;
-        specialImage.image = game.assets[IMAGE_SPECIAL];
-        specialImage.addEventListener(enchant.Event.ENTER_FRAME,function(){
-            this.x = sheep.x;
-            this.y = sheep.y;
-        });
-        sheep.specialImage = specialImage;
-        stageObjGroup.addChild(specialImage);
+        // var specialImage = new Sprite(64,64);
+        // specialImage.x = sheep.x;
+        // specialImage.y = sheep.y;
+        // specialImage.image = game.assets[IMAGE_SPECIAL];
+        // specialImage.addEventListener(enchant.Event.ENTER_FRAME,function(){
+        //     this.x = sheep.x;
+        //     this.y = sheep.y;
+        // });
+        // sheep.specialImage = specialImage;
+        // stageObjGroup.addChild(specialImage);
 
         sheeps.push(sheep);
     }

@@ -3,9 +3,19 @@ var Sheep = enchant.Class.create(enchant.Sprite,{
         enchant.Sprite.call(this,SHEEP_IMAGE_SIZE,SHEEP_IMAGE_SIZE);
 
         if(type == "Black")
-            this.image = game.assets[IMAGE_BLACKSHEEP];
+        {
+            if(!isSpecial)
+                this.image = game.assets[IMAGE_BLACKSHEEP];
+            else
+                this.image = game.assets[IMAGE_SBLACKSHEEP];
+        }
         else if(type == "White")
-            this.image = game.assets[IMAGE_WHITESHEEP];
+        {
+            if(!isSpecial)
+                this.image = game.assets[IMAGE_WHITESHEEP];
+            else
+                this.image = game.assets[IMAGE_SWHITESHEEP];
+        }
 
         this.type = type;
         this.isSpecial = isSpecial;
@@ -19,18 +29,7 @@ var Sheep = enchant.Class.create(enchant.Sprite,{
         this.scaleY = scale;
 
         this.moveDir = [0,0];
-        if(isSpecial)
-        {   
-            var dirs = [
-                [0,1],
-                [0,-1],
-                [1,0],
-                [-1,0]
-            ];
-
-            this.moveDir = dirs[Math.floor(Math.random()*(dirs.length))];
-        }
-        else
+        if(!isSpecial)
         {
             createRandomDir(this.moveDir);
         }
@@ -109,7 +108,31 @@ var Sheep = enchant.Class.create(enchant.Sprite,{
         }
     },
     specialMove: function(){
+        var befX = this.x;
+        var befY = this.y;
+
         this.x += this.moveDir[0]*this.speed;
         this.y += this.moveDir[1]*this.speed;
+
+        for(var i = 0; i < fences.length; i++){
+            //フェンスとぶつかったら
+            if(this.intersect(fences[i])){
+                this.x = befX;
+                this.y = befY;
+
+                var dirx = this.moveDir[0];
+                var diry = this.moveDir[1];
+
+                this.moveDir[0] = Math.abs(diry);
+                this.moveDir[1] = Math.abs(dirx);
+
+                //一番近いところから枠外に出るようにする
+                if(this.y < game.height / 2.0)
+                    this.moveDir[1] *= -1.0;
+
+                if(this.x < game.width / 2.0)
+                    this.moveDir[0] *= -1.0;
+            }
+        }
     }
 });

@@ -9,10 +9,21 @@ window.onload = function(){
 
     game.preload(IMAGE_WHITESHEEP);
     game.preload(IMAGE_BLACKSHEEP);
+    game.preload(IMAGE_SWHITESHEEP);
+    game.preload(IMAGE_SBLACKSHEEP);
     game.preload(IMAGE_BLACKFENCE);
     game.preload(IMAGE_WHITEFENCE);
     game.preload(IMAGE_BACKGROUND);
     game.preload(IMAGE_SPECIAL);
+    game.preload(IMAGE_READY);
+    game.preload(IMAGE_GO);
+    game.preload(IMAGE_TIMEOVER);
+    game.preload(IMAGE_RESULT_PANEL);
+    game.preload(IMAGE_TIME_FRAME);
+    game.preload(IMAGE_SCORE_FRAME);
+
+    game.preload(SOUND_POINT);
+    game.preload(SOUND_SHEEP);
 
     game.onload = function(){
         titleScene = new TitleScene();
