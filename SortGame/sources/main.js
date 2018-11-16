@@ -21,13 +21,25 @@ window.onload = function(){
     game.preload(IMAGE_RESULT_PANEL);
     game.preload(IMAGE_TIME_FRAME);
     game.preload(IMAGE_SCORE_FRAME);
+    game.preload(IMAGE_START_BT);
+    game.preload(IMAGE_RANK_BT);
+    game.preload(IMAGE_RANK_BT_DISABLE);
+    game.preload(IMAGE_SUCCESS);
+    game.preload(IMAGE_FAIL);
 
     game.preload(SOUND_POINT);
     game.preload(SOUND_SHEEP);
+    game.preload(SOUND_MISS);
+    game.preload(SOUND_BGM);
+
+    game.bgm = Sound.load(SOUND_BGM);
+    game.bgm.isPlay = false;
 
     game.onload = function(){
         titleScene = new TitleScene();
+
         game.replaceScene(titleScene);
     };
+
     game.start();
 };

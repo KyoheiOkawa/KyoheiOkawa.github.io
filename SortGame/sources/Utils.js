@@ -44,3 +44,16 @@ var checkOutOfWindow = function(pos,imageHeight,imageWidth){
 
     return false;
 }
+
+var isPointInnerRect = function(px,py,rx,ry,rwidth,rheight){
+    var isX = false;
+    var isY = false;
+
+    if(px >= rx && px <= rx+rwidth)
+        isX = true;
+
+    if(py >= ry && py <= ry+rheight)
+        isY = true;
+
+    return isX && isY;
+}

@@ -61,10 +61,16 @@ IMAGE_TIMEOVER   = IMAGE_PATH + "timeover.png";
 IMAGE_RESULT_PANEL = IMAGE_PATH + "resultPanel.png";
 IMAGE_TIME_FRAME = IMAGE_PATH + "timeLimitFrame.png";
 IMAGE_SCORE_FRAME = IMAGE_PATH + "scoreFrame.png";
-
+IMAGE_START_BT   = IMAGE_PATH + "StartBt.png";
+IMAGE_RANK_BT    = IMAGE_PATH + "RankBt.png";
+IMAGE_RANK_BT_DISABLE    = IMAGE_PATH + "RankDisBt.png";
+IMAGE_SUCCESS    = IMAGE_PATH + "success.png";
+IMAGE_FAIL       = IMAGE_PATH + "fail.png";
 
 SOUND_POINT = SOUND_PATH + "point.mp3";
 SOUND_SHEEP = SOUND_PATH + "sheep.mp3";
+SOUND_MISS  = SOUND_PATH + "miss.mp3";
+SOUND_BGM   = SOUND_PATH + "bgm.mp3";
 
 
 

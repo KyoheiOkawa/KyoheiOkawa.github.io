@@ -2,6 +2,11 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 	initialize: function(){
 		enchant.Scene.call(this);
 
+        if(!game.bgm.isPlay){
+            game.bgm.play();
+            game.bgm.isPlay = true;
+        }
+
         this.startFrame = game.frame;
         this.time = LIMIT_TIME
         this.score = 0;
@@ -39,7 +44,7 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         var uiGroup = new Group();
         this.addChild(uiGroup);
 
-        var scoreFrame = new Sprite(156,40);
+        scoreFrame = new Sprite(156,40);
         scoreFrame.x = game.width-156;
         scoreFrame.y = 135;
         scoreFrame.image = game.assets[IMAGE_SCORE_FRAME];
@@ -55,6 +60,20 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         scoreLabel.addEventListener(enchant.Event.ENTER_FRAME,function(){
             this.text = mainScene.score;
         });
+
+        successSp = new Sprite(32,32);
+        successSp.x = scoreFrame.x+30.0;
+        successSp.y = scoreFrame.y+6.0;
+        successSp.opacity = 0;
+        successSp.image = game.assets[IMAGE_SUCCESS];
+        uiGroup.addChild(successSp);
+
+        failSp = new Sprite(32,32);
+        failSp.x = scoreFrame.x+30.0;
+        failSp.y = scoreFrame.y+6.0;
+        failSp.opacity = 0;
+        failSp.image = game.assets[IMAGE_FAIL];
+        uiGroup.addChild(failSp);
 
         var timeFrame = new Sprite(156,40);
         timeFrame.x = 0;
@@ -129,6 +148,13 @@ var MainScene = enchant.Class.create(enchant.Scene,{
             stageObjGroup.addChild(animal);
             sheeps.push(animal);
         }
+
+        this.addEventListener("enterframe",function(e){
+            if(game.bgm.currentTime >= 32.5)
+            {
+                game.bgm.currentTime = 0;
+            }
+        });
 
         var isTouch = false;
         touchedSheep = null;
@@ -232,6 +258,12 @@ var MainScene = enchant.Class.create(enchant.Scene,{
                     else
                         this.score += ADD_POINT;
 
+                    successSp.opacity = 1;
+                    successSp.x = scoreFrame.x+30.0;
+                    successSp.y = scoreFrame.y+5.0;
+                    successSp.tl.clear();
+                    successSp.tl.moveBy(0,-20,30).and().fadeOut(40);
+
                     var pointSe = game.assets[SOUND_POINT].clone();
                     pointSe.play();
                 }
@@ -239,6 +271,16 @@ var MainScene = enchant.Class.create(enchant.Scene,{
                     this.score -= MINUS_POINT;
                     if(this.score < 0)
                         this.score = 0;
+
+                    failSp.opacity = 1;
+                    failSp.scaleX = 0;
+                    failSp.x = scoreFrame.x+30.0;
+                    failSp.y = scoreFrame.y+5.0;
+                    failSp.tl.clear();
+                    failSp.tl.scaleTo(1,1,20).fadeOut(15);
+
+                    var missSe = game.assets[SOUND_MISS].clone();
+                    missSe.play();
                 }
 
                 this.removeTouchedSheep();
