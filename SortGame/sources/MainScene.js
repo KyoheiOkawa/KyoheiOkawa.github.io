@@ -3,8 +3,13 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 		enchant.Scene.call(this);
 
         if(!game.bgm.isPlay){
+            try{
             game.bgm.play();
             game.bgm.isPlay = true;
+            }
+            catch(e){
+
+            }
         }
 
         this.startFrame = game.frame;
