@@ -145,15 +145,7 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         }
 
         this.addEventListener("enterframe",function(e){
-            if(!game.bgm.isPlay){
-                game.bgm.play();
-                game.bgm.isPlay = true;
-            }
 
-            if(game.bgm.currentTime >= 32.5)
-            {
-                game.bgm.currentTime = 0;
-            }
         });
 
         var isTouch = false;

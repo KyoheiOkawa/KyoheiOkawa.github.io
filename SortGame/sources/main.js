@@ -30,10 +30,6 @@ window.onload = function(){
     game.preload(SOUND_POINT);
     game.preload(SOUND_SHEEP);
     game.preload(SOUND_MISS);
-    game.preload(SOUND_BGM);
-
-    game.bgm = Sound.load(SOUND_BGM);
-    game.bgm.isPlay = false;
 
     game.onload = function(){
         titleScene = new TitleScene();
