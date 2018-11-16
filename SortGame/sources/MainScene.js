@@ -150,7 +150,7 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         }
 
         this.addEventListener("enterframe",function(e){
-            if(game.bgm.currentTime >= 32.5)
+            if(game.bgm.currentTime >= 0.9)
             {
                 game.bgm.currentTime = 0;
             }
