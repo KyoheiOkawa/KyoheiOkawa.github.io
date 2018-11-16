@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="HTML,CSS,JavaScript,JQuery" />
+<meta name="description" content="HTML・CSS・JavaScript・JQueryに対する簡単な説明" />
+<link href="css/j_sample.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="jquery.base64.js"></script>
+<script type="text/javascript">
+function getinfo() {
+    $.ajax({
+        url: "http://wizgame.developluna.jp/~g30/getdata.php",
+        success: function(data){
+            $('#text').html(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+            alert('ERR');
+        },
+        beforeSend: function(xhr) {
+            var credentials = $.base64.encode("wizuser:wiz!");
+            xhr.setRequestHeader("Authorization", "Basic " + credentials);
+        },
+    });
+}
+</script>
+<title>サーバからのデータ読み込みテスト</title>
+</head>
+<body>
+<h2>サーバからのデータ読み込みテスト</h2>
+<div id="text">
+</div>
+<br />
+<input type="button" onClick="getinfo();" id="button" value="データ取得"/>
+<br />
+</body>
+</html>
+
