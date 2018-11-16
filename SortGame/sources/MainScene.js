@@ -2,11 +2,6 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 	initialize: function(){
 		enchant.Scene.call(this);
 
-        if(!game.bgm.isPlay){
-            game.bgm.play();
-            game.bgm.isPlay = true;
-        }
-
         this.startFrame = game.frame;
         this.time = LIMIT_TIME
         this.score = 0;
@@ -150,7 +145,12 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         }
 
         this.addEventListener("enterframe",function(e){
-            if(game.bgm.currentTime >= 0.9)
+            if(!game.bgm.isPlay){
+                game.bgm.play();
+                game.bgm.isPlay = true;
+            }
+
+            if(game.bgm.currentTime >= 32.5)
             {
                 game.bgm.currentTime = 0;
             }
