@@ -2,7 +2,7 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 	initialize: function(){
 		enchant.Scene.call(this);
 
-        game.assets[SOUND_BGM].clone().play();
+        game.bgm.play();
 
         this.startFrame = game.frame;
         this.time = LIMIT_TIME
@@ -197,6 +197,11 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         });
 
         this.addEventListener("enterframe",function(e){
+            if(game.bgm.currentTime >= game.bgm.duration)
+            {
+                game.bgm.currentTime = 0.0;
+            }
+
             if(this.gameState=="start"){
                 var time = (game.frame-this.startFrame)/game.fps;
 

@@ -33,6 +33,8 @@ window.onload = function(){
     game.preload(SOUND_BGM);
 
     game.onload = function(){
+        game.bgm = game.assets[SOUND_BGM].clone();
+
         titleScene = new TitleScene();
         game.replaceScene(titleScene);
     };
