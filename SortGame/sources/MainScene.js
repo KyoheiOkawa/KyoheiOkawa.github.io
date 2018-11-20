@@ -150,10 +150,6 @@ var MainScene = enchant.Class.create(enchant.Scene,{
             sheeps.push(animal);
         }
 
-        this.addEventListener("enterframe",function(e){
-
-        });
-
         var isTouch = false;
         touchedSheep = null;
         function drag(e){
@@ -201,7 +197,8 @@ var MainScene = enchant.Class.create(enchant.Scene,{
         });
 
         this.addEventListener("enterframe",function(e){
-            if(game.bgm.currentTime >= game.bgm.duration)
+
+            if(game.bgm.currentTime >= 153.0)
             {
                 game.bgm.currentTime = 0.0;
             }
