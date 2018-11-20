@@ -2,6 +2,8 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 	initialize: function(){
 		enchant.Scene.call(this);
 
+        game.assets[SOUND_BGM].clone().play();
+
         this.startFrame = game.frame;
         this.time = LIMIT_TIME
         this.score = 0;
