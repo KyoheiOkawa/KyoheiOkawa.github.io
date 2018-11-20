@@ -34,6 +34,8 @@ window.onload = function(){
 
     game.onload = function(){
         game.bgm = game.assets[SOUND_BGM].clone();
+        game.bgm.isPlay = false;
+        game.bgm.duration = 150.0;
 
         titleScene = new TitleScene();
         game.replaceScene(titleScene);

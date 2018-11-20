@@ -2,7 +2,11 @@ var MainScene = enchant.Class.create(enchant.Scene,{
 	initialize: function(){
 		enchant.Scene.call(this);
 
-        game.bgm.play();
+        if(!game.bgm.isPlay)
+        {
+            game.bgm.isPlay = true;
+            game.bgm.play();
+        }
 
         this.startFrame = game.frame;
         this.time = LIMIT_TIME
